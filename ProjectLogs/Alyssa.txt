@@ -1,0 +1,19 @@
+-----------------------------
+Alyssa Biasi's Project Pi Log
+-----------------------------
+
+Week 3
+------
+1. Evaluation of project management tools
+    > Trello
+    > Gantter
+    > Jira
+    > Redmine
+
+2. Setting up Redmine
+    > Hosted by www.hostedredmine.com
+
+2. Setting up repositories
+    > hostedredmine.com only supports SVN
+    > Repository hosted on github.com/alyssaBiasi
+        --> GitHub provides support for SVN.
