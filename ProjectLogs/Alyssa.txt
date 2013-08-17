@@ -2,6 +2,10 @@
 Alyssa Biasi's Project Pi Log
 -----------------------------
 
+Week 1
+------
+1. Raspberry PI Cross Compiling Recipe
+
 Week 3
 ------
 1. Evaluation of project management tools
@@ -19,3 +23,8 @@ Week 3
         --> Using GitHub's "Organizations" to allow team access
         --> GitHub provides support for SVN allowing individuals to pick their
             preferred method of version control.
+
+
+Week 4
+------
+1. Arch Linux Arm image setup.
