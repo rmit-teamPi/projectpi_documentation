@@ -3,6 +3,7 @@ Arch Linux Arm
 --------------
 
 - Resizing:
+
 |   # fdisk /dev/mmcblk0
 |   >> p
 |   >> d
@@ -24,7 +25,8 @@ Arch Linux Arm
 |   # resize2fs /dev/mmcblk0p5
 
 - Set the hostname:
-    # echo "" > /etc/hostname
+
+|    # echo "" > /etc/hostname
 
 - WiFi:
     **To Connect:**
@@ -58,7 +60,7 @@ Arch Linux Arm
     # passwd <username>
 
     # groupadd admin
-    
+
     # gpasswd -a <username> admin
 
 - Install:
