@@ -23,12 +23,12 @@ Week 3
 #. Setting up repositories
     > hostedredmine.com only supports SVN
 
-    > Repository hosted on github.com/rmit-teamPi
+    > Repository hosted on www.github.com/rmit-teamPi
 
-        --> Using GitHub's "Organizations" to allow team access
+        - Using GitHub's "Organizations" to allow team access
 
-        --> GitHub provides support for SVN allowing individual members to pick
-            their preferred method of version control.
+        - GitHub provides support for SVN allowing individual members to pick
+          their preferred method of version control.
 
 Week 4
 ------

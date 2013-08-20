@@ -59,7 +59,6 @@ Arch Linux Arm
     # pacman -Syu
 
 - Users and Groups:
-
     # useradd -m <username>
 
     # passwd <username>
