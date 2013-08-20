@@ -3,30 +3,32 @@ Arch Linux Arm
 --------------
 
 - Resizing:
+   # fdisk /dev/mmcblk0
 
-|   # fdisk /dev/mmcblk0
-|   >> p
-|   >> d
-|   >> 2
-|   >> n
-|   >> e
-|   >> (return) # accept default partition no
-|   >> (return) # accept default start
-|   >> (return) # accept default end
-|   >> n
-|   >> l
-|   >> (return) # accept default start
-|   >> (return) # accept default end
-|   >> p
-|   >> w
-|
-|   # sync; reboot 
-|   ...
-|   # resize2fs /dev/mmcblk0p5
+   >> p, d, 2, n, e
+
+   >> (return) = accept default partition no
+
+   >> (return) = accept default start
+
+   >> (return) = accept default end
+
+   >> n, l
+
+   >> (return) = accept default start
+
+   >> (return) = accept default end
+
+   >> p, w
+
+   # sync; reboot 
+
+   ...
+
+   # resize2fs /dev/mmcblk0p5
 
 - Set the hostname:
-
-|    # echo "" > /etc/hostname
+    # echo "" > /etc/hostname
 
 - WiFi:
     **To Connect:**
@@ -37,10 +39,13 @@ Arch Linux Arm
 
     **To Auto Connect:**
 
-|    # netctl list
-|    # cp /etc/netctl/wlan0-*** /etc/netctl/<profile>
-|    # netctl start <profile>
-|    # netctl enable <profile>
+    # netctl list
+
+    # cp /etc/netctl/wlan0-*** /etc/netctl/<profile>
+
+    # netctl start <profile>
+
+    # netctl enable <profile>
 
 - Update System:
     # pacman-key --init

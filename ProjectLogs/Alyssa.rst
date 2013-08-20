@@ -9,21 +9,25 @@ Week 1
 Week 3
 ------
 1. Evaluation of project management tools
+    > Trello
 
-|    > Trello
-|    > Gantter
-|    > Jira
-|    > Redmine
+    > Gantter
+
+    > Jira
+
+    > Redmine
 
 #. Setting up Redmine
     > Hosted by www.hostedredmine.com
 
 #. Setting up repositories
+    > hostedredmine.com only supports SVN
 
-|    > hostedredmine.com only supports SVN
-|    > Repository hosted on github.com/rmit-teamPi
-|        --> Using GitHub's "Organizations" to allow team access
-|        --> GitHub provides support for SVN allowing individual members to pick
+    > Repository hosted on github.com/rmit-teamPi
+
+        --> Using GitHub's "Organizations" to allow team access
+
+        --> GitHub provides support for SVN allowing individual members to pick
             their preferred method of version control.
 
 Week 4
