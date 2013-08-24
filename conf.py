@@ -170,6 +170,8 @@ htmlhelp_basename = 'APunnetofBerriesdoc'
 # -- Options for LaTeX output --------------------------------------------------
 
 latex_elements = {
+'classoptions': ',oneside',
+'babel': '\\usepackage[english]{babel}'
 # The paper size ('letterpaper' or 'a4paper').
 #'papersize': 'letterpaper',
 
