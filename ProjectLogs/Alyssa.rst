@@ -33,4 +33,15 @@ Week 3
 Week 4
 ------
 1. Arch Linux Arm image setup.
-    > Partition layout changed in July 2013 (http://davidnelson.me/?p=218)
+    > Partition layout changed in July 2013 (http://davidnelsono.me/?p=218)
+
+Week 5
+------
+1. Setting up docutils, rst2pdf and Sphinx on a VM running Ubuntu for the 
+generation of documentation.
+    > apt-get install python-docutils
+    > apt-get install rst2pdf
+    > apt-get install python-sphinx
+    > apt-get install texlive-latex-recommended
+    > apt-get install texlive-latex-extra
+    > apt-get install texlive-fonts-recommended

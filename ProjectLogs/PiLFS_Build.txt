@@ -1,0 +1,19 @@
+PiLFS Build
+-----------
+
+- Base PiLFS image
+- Resize image:
+	--> fdisk /dev/mmcblk0
+	--> d, 2, n, p, 2, 'enter', 'enter', w
+	--> reboot
+	--> resize2fs /dev/mmcblk0p2
+- Installed:
+	--> sudo-1.8.7 (http://www.sudo.ws/sudo/dist/sudo-1.8.7.tar.gz)
+	--> BLFS bootscripts: random
+- Compressed man pages:
+	--> /usr/sbin/compressdoc (http://anduin.linuxfromscratch.org/files/BLFS/svn/compressdoc)
+	--> sudo /usr/sbin/compressdoc --bz2
+- Find IP address:
+	--> cat /etc/hosts
+	--> ping 192.168.1.10
+			"64 bytes from 192.168.1.42"

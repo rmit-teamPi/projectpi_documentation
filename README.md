@@ -1,4 +1,4 @@
-projectpi_documentation
+ProjectPi Documentation
 =======================
 
 Documentation for Operating Systems Project Pi
