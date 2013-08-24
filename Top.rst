@@ -11,7 +11,7 @@ the next generation.
 
 .. image:: images/raspberry_pi.jpg
 	:width: 300px
-	:width: 200px
+	:height: 200px
 	:align: right
 	:alt: Pi diagram.
 
