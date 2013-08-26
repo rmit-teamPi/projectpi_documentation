@@ -59,9 +59,3 @@ These include, but are not limited to, the following:
 +---------------------------------------+----------------------------------------+
 | One user cancels another user's job.  | Permission denied.                     |
 +---------------------------------------+----------------------------------------+
-
-.. note::
-
-    kjad;lkfja;dsf
-    sdf;lajdf;kadfaf;lkja
-    kajd;lfa
