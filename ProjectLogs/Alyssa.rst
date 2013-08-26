@@ -45,3 +45,9 @@ generation of documentation.
     > apt-get install texlive-latex-recommended
     > apt-get install texlive-latex-extra
     > apt-get install texlive-fonts-recommended
+
+2. Work on design specification.
+
+Week 6
+------
+1. Work on design specification.

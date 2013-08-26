@@ -78,6 +78,7 @@ Arch Linux Arm
     3) Git
     4) Python 2 & 3
         # pacman -S python2
+        # pacman -S python3
     5) GCC
         # pacman -S gcc
     6) OpenMPI
