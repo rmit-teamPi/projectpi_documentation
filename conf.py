@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 #
 # A Punnet of Berries documentation build configuration file, created by
-# sphinx-quickstart on Sat Aug 24 12:11:13 2013.
+# sphinx-quickstart on Mon Aug 26 11:52:05 2013.
 #
 # This file is execfile()d with the current directory set to its containing dir.
 #
@@ -41,7 +41,7 @@ master_doc = 'Top'
 
 # General information about the project.
 project = u'A Punnet of Berries'
-copyright = u'2013, Alyssa Biasi, Adrian Zielonka, Zach Ryan'
+copyright = u'2013, TeamPi'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
@@ -81,7 +81,8 @@ exclude_patterns = ['.build']
 #show_authors = False
 
 # The name of the Pygments (syntax highlighting) style to use.
-pygments_style = 'sphinx'
+#pygments_style = 'sphinx'
+pygments_style = 'native'
 
 # A list of ignored prefixes for module index sorting.
 #modindex_common_prefix = []
@@ -186,7 +187,7 @@ latex_elements = {
 # (source start file, target name, title, author, documentclass [howto/manual]).
 latex_documents = [
   (master_doc, 'APunnetofBerries.tex', u'A Punnet of Berries Documentation',
-   u'Alyssa Biasi, Adrian Zielonka, Zach Ryan', 'manual'),
+   u'TeamPi', 'manual'),
 ]
 
 # The name of an image file (relative to this directory) to place at the top of
@@ -216,7 +217,7 @@ latex_documents = [
 # (source start file, name, description, authors, manual section).
 man_pages = [
     (master_doc, 'apunnetofberries', u'A Punnet of Berries Documentation',
-     [u'Alyssa Biasi, Adrian Zielonka, Zach Ryan'], 1)
+     [u'TeamPi'], 1)
 ]
 
 # If true, show URL addresses after external links.
@@ -230,7 +231,7 @@ man_pages = [
 #  dir menu entry, description, category)
 texinfo_documents = [
   (master_doc, 'APunnetofBerries', u'A Punnet of Berries Documentation',
-   u'Alyssa Biasi, Adrian Zielonka, Zach Ryan', 'APunnetofBerries', 'One line description of project.',
+   u'TeamPi', 'APunnetofBerries', 'One line description of project.',
    'Miscellaneous'),
 ]
 

@@ -1,6 +1,8 @@
 Architecture
 ============
 
+.. highlight:: rest
+
 ------
 System
 ------
