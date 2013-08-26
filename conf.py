@@ -25,7 +25,8 @@ import sys, os
 
 # Add any Sphinx extension module names here, as strings. They can be extensions
 # coming with Sphinx (named 'sphinx.ext.*') or your custom ones.
-extensions = ['sphinx.ext.autodoc', 'sphinx.ext.doctest', 'sphinx.ext.intersphinx', 'sphinx.ext.todo', 'sphinx.ext.coverage', 'sphinx.ext.pngmath', 'sphinx.ext.ifconfig', 'sphinx.ext.viewcode']
+extensions = ['sphinx.ext.autodoc', 'sphinx.ext.doctest', 'sphinx.ext.intersphinx', 'sphinx.ext.todo', 'sphinx.ext.coverage', 'sphinx.ext.pngmath', 'sphinx.ext.ifconfig', 'sphinx.ext.viewcode', 
+'rst2pdf.pdfbuilder']
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['.templates']
@@ -169,8 +170,32 @@ htmlhelp_basename = 'APunnetofBerriesdoc'
 
 
 # -- Options for LaTeX output --------------------------------------------------
+latex_custom = r'''
+\definecolor{Admonition}{RGB}{221,233,239}
+
+\makeatletter
+    \newenvironment{admonitionbox}{
+        \begin{lrbox}{\@tempboxa}\begin{minipage}{\columnwidth}
+    }{
+        \end{minipage}\end{lrbox}
+        \colorbox{Admonition}{\usebox{\@tempboxa}}
+    }
+
+    \renewenvironment{notice}[2]{
+        \begin{admonitionbox}
+    }{
+        \end{admonitionbox}
+    }
+\makeatother
+'''
 
 latex_elements = {
+# Additional stuff for the LaTeX preamble.
+'preamble': latex_custom,
+
+'releasename': "",
+#'release': "",
+
 'classoptions': ',oneside',
 'babel': '\\usepackage[english]{babel}'
 # The paper size ('letterpaper' or 'a4paper').
@@ -178,9 +203,6 @@ latex_elements = {
 
 # The font size ('10pt', '11pt' or '12pt').
 #'pointsize': '10pt',
-
-# Additional stuff for the LaTeX preamble.
-#'preamble': '',
 }
 
 # Grouping the document tree into LaTeX files. List of tuples
@@ -192,7 +214,7 @@ latex_documents = [
 
 # The name of an image file (relative to this directory) to place at the top of
 # the title page.
-#latex_logo = None
+#latex_logo = "images/logo.jpg"
 
 # For "manual" documents, if this is true, then toplevel headings are parts,
 # not chapters.
