@@ -170,28 +170,47 @@ htmlhelp_basename = 'APunnetofBerriesdoc'
 
 
 # -- Options for LaTeX output --------------------------------------------------
-latex_custom = r'''
-\definecolor{Admonition}{RGB}{221,233,239}
-
-\makeatletter
-    \newenvironment{admonitionbox}{
-        \begin{lrbox}{\@tempboxa}\begin{minipage}{\columnwidth}
-    }{
-        \end{minipage}\end{lrbox}
-        \colorbox{Admonition}{\usebox{\@tempboxa}}
-    }
-
-    \renewenvironment{notice}[2]{
-        \begin{admonitionbox}
-    }{
-        \end{admonitionbox}
-    }
-\makeatother
+#latex_custom = r'''
+#\definecolor{Admonition}{RGB}{221,233,239}
+#
+#\makeatletter
+#    \newenvironment{admonitionbox}{
+#        \begin{lrbox}{\@tempboxa}\begin{minipage}{\columnwidth}
+#    }{
+#        \end{minipage}\end{lrbox}
+#        \colorbox{Admonition}{\usebox{\@tempboxa}}
+#    }
+#
+#    \renewenvironment{notice}[2]{
+#        \begin{admonitionbox}
+#    }{
+#        \end{admonitionbox}
+#    }
+#\makeatother
+#'''
+preamb_old = r'''%\documentclass{memoir}
+    \makeatletter
+  \fancypagestyle{normal}{
+      \fancyhf{}
+      \fancyfoot[LE,RO]{{\py@HeaderFamily\thepage}}
+      \fancyfoot[LO]{{\py@HeaderFamily\nouppercase{\rightmark}}}
+      \fancyfoot[RE]{{\py@HeaderFamily\nouppercase{\leftmark}}}
+      \fancyhead[LE,RO]{{\py@HeaderFamily \@title}} % here's the change
+  \renewcommand{\headrulewidth}{0.4pt}
+  \renewcommand{\footrulewidth}{0.4pt}
+  }
+  \makeatother
+  %\color {blue}
+  %\normalcolor {dark blue}
+  \pagecolor [RGB]{255, 247, 226}
+  \definecolor{VerbatimColor}{rgb}{0.95,0.85,0.65}
+  \definecolor{VerbatimBorderColor}{rgb}{0.5,0.95,0.1}
 '''
 
 latex_elements = {
 # Additional stuff for the LaTeX preamble.
-'preamble': latex_custom,
+#'preamble': latex_custom,
+'preamble': preamb_old,
 
 'releasename': "",
 #'release': "",
