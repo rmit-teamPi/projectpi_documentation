@@ -214,7 +214,7 @@ latex_elements = {
 'preamble': latex_custom,
 
 'releasename': "",
-#'release': "",
+'release': "",
 
 'classoptions': ',oneside',
 'babel': '\\usepackage[english]{babel}'
@@ -234,7 +234,7 @@ latex_documents = [
 
 # The name of an image file (relative to this directory) to place at the top of
 # the title page.
-#latex_logo = "images/logo.jpg"
+latex_logo = "images/pi_logo.jpg"
 
 # For "manual" documents, if this is true, then toplevel headings are parts,
 # not chapters.

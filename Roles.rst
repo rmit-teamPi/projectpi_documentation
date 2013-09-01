@@ -14,8 +14,10 @@ The members of TeamPi are:
     Primary Role:
         Application Development
     Secondary Role(s):
+        Operating System Configuration, Documentation
 
 - Zach Ryan
     Primary Role:
         Hardware and Operating System Configuration
     Secondary Role(s):
+        Application Development, Documentation
