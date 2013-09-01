@@ -49,3 +49,21 @@ By utilising a central hub for communications, the likelihood of total system
 failure is greatly reduced. Whilst failure of the central hub would mean that
 the entire system is brought down, failure of an individual node wouldn't have
 any affect on the overall system.
+
+Hardware
+--------
++-----------------+-----+------------------------------------+--------------+-----------+------------+
+| Category        | Qty | Description                        | Supplier     | Unit Cost | Total Cost |
++=================+=====+====================================+==============+===========+============+
+| Computer        |   6 | Raspberry Pi Model B 512MB         | element14    |    $41.80 |    $250.80 |
++-----------------+-----+------------------------------------+--------------+-----------+------------+
+| Storage         |   6 | Assorted brands 8GB SD card        | MULTIPLE     |    $12.00 |     $72.00 |  
++-----------------+-----+------------------------------------+--------------+-----------+------------+
+| Enclosure/Case  |   6 | Raspberry Pi Case (Clear)          | element14    |     $9.79 |     $58.74 |
++-----------------+-----+------------------------------------+--------------+-----------+------------+
+| Power Supply    |   6 | Power Supply USB 5V/1.2A           | element14    |    $22.00 |    $132.00 |
++-----------------+-----+------------------------------------+--------------+-----------+------------+
+| Ethernet Cables |   6 | 1.5m Cat-5e Patch Cable            | MULTIPLE     |     $3.00 |     $18.00 |
++-----------------+-----+------------------------------------+--------------+-----------+------------+
+| Switch          |   1 | 8-Port 10/100 Mbps Ethernet Switch | UNKNOWN      |    $34.00 |     $34.00 |
++-----------------+-----+------------------------------------+--------------+-----------+------------+
