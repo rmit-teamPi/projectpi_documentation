@@ -71,5 +71,5 @@ performance the 'Punnet of Berries' cluster is able to achieve.
 Once the cluster itself has been benchmarked, the 'HPL' will then be run
 on a single Raspberry Pi as well as seperate system containing a modern x86/x64
 based processor. This will provide a meaningful comparison with regards
-to the performance gain a cluster of six Raspberry Pi's over various other
+to the performance gain a cluster of six Raspberry Pi's has over various other
 systems.
