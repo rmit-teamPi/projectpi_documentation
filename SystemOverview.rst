@@ -50,6 +50,10 @@ failure is greatly reduced. Whilst failure of the central hub would mean that
 the entire system is brought down, failure of an individual node wouldn't have
 any affect on the overall system.
 
+--------------
+Specifications
+--------------
+
 Hardware
 --------
 +-----------------+-----+------------------------------------+--------------+-----------+------------+
