@@ -51,3 +51,4 @@ generation of documentation.
 Week 6
 ------
 1. Work on design specification.
+2. Completed Milestone 2 - design specification.
