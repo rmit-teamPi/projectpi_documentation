@@ -71,3 +71,16 @@ Hardware
 +-----------------+-----+------------------------------------+--------------+-----------+------------+
 | Switch          |   1 | 8-Port 10/100 Mbps Ethernet Switch | UNKNOWN      |    $34.00 |     $34.00 |
 +-----------------+-----+------------------------------------+--------------+-----------+------------+
+
+Software
+--------
+The operating system of choice for the 'Punnet of Berries' super computer is a
+ported version of Arch Linux for ARM processors. This linux variant is very
+lightweight and only requires approximately 130MB of disk space, packing in only
+the bare essentials required for a functional operating system. In addition to
+the operating system, the following applications will be installed:
+
+- GCC
+- Open MPI
+- Python 2
+- Python 3
