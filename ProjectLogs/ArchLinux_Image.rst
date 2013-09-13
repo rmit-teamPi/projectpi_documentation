@@ -91,5 +91,6 @@ Arch Linux Arm
     
         # pacman -S gcc
     6) OpenMPI
+    
         # pacman -Syy openmpi
 
