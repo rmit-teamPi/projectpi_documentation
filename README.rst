@@ -1,7 +1,7 @@
 ProjectPi Documentation
 =======================
 
-Documentation for Operating Systems Project Pi
+Documentation for Raspberry Pi project - The Punnet of Berries
 
 The Punnet of Berries
 ---------------------
