@@ -46,6 +46,9 @@ Arch Linux Arm
     # netctl start <profile>
 
     # netctl enable <profile>
+    
+- Set the timezone:
+   # ln -s /usr/share/zoneinfo/Australia/Melbourne /etc/localtime
 
 - Update System:
     # pacman-key --init
@@ -69,17 +72,23 @@ Arch Linux Arm
 
 - Install:
     1) Sudo:
+    
         - Give "admin" group sudo rights.
+        
             # visudo
 
-            Find "#%wheel ALL=(ALL) ALL". Add the line:
+            Find "#%wheel ALL=(ALL) ALL". Change it to:
+            
             %admin ALL=(ALL) ALL
     2) Vim
     3) Git
     4) Python 2 & 3
+    
         # pacman -S python2
+        
         # pacman -S python3
     5) GCC
+    
         # pacman -S gcc
     6) OpenMPI
         # pacman -Syy openmpi
