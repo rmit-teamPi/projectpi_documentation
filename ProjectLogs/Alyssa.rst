@@ -66,3 +66,4 @@ Week 6
 Week 7
 ------
 1. Setting up Arch Linux Arm images on 8GB SD cards.
+2. Set up basic documents and sphinx for the final portfolio.
