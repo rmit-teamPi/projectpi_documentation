@@ -3,9 +3,19 @@ Arch Linux Arm
 --------------
 
 - Resizing:
+   Note: Where '>>' is shown, enter the command shown followed by the "RETURN/ENTER" key.
+   
    # fdisk /dev/mmcblk0
 
-   >> p, d, 2, n, e
+   >> p
+   
+   >> d
+   
+   >> 2
+   
+   >> n
+   
+   >> e
 
    >> (return) = accept default partition no
 
@@ -13,13 +23,17 @@ Arch Linux Arm
 
    >> (return) = accept default end
 
-   >> n, l
+   >> n
+   
+   >> l
 
    >> (return) = accept default start
 
    >> (return) = accept default end
 
-   >> p, w
+   >> p
+   
+   >> w
 
    # sync; reboot 
 
@@ -28,7 +42,7 @@ Arch Linux Arm
    # resize2fs /dev/mmcblk0p5
 
 - Set the hostname:
-    # echo "" > /etc/hostname
+    # echo "hostname" > /etc/hostname
 
 - WiFi:
     **To Connect:**
@@ -53,11 +67,12 @@ Arch Linux Arm
 - Update System:
     # pacman-key --init
 
-    In a different console (Alt+F2):
+    Press (Alt+F2) to switch to a 2nd virtual console, then enter the following command:
 
     # ls -R / && ls -R / && ls -R /
 
-    Check first console for key init finished.
+    Press (Alt+F1) to swtich back 1st virtual console.
+    Check whether the "pacman-key --init" command has finished running.
 
     # pacman -Syu
 
@@ -72,6 +87,9 @@ Arch Linux Arm
 
 - Install:
     1) Sudo:
+    
+        - Install "sudo" using package manager (pacman)
+        # pacman -S sudo
     
         - Give "admin" group sudo rights.
         
