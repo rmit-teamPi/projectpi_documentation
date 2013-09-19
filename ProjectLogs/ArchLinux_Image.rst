@@ -89,7 +89,8 @@ Arch Linux Arm
     1) Sudo:
     
         - Install "sudo" using package manager (pacman)
-        # pacman -S sudo
+            
+            # pacman -S sudo
     
         - Give "admin" group sudo rights.
         
@@ -99,6 +100,12 @@ Arch Linux Arm
             
             %admin ALL=(ALL) ALL
     2) Vim
+    
+        - Install "vim" using package manager (pacman)
+        
+            # pacman -Syy
+            # pacman -S vim
+            
     3) Git
     4) Python 2 & 3
     
