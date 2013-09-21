@@ -115,7 +115,9 @@ Arch Linux Arm
     5) GCC
     
         # pacman -S gcc
+    6) Make
+    
+        # pacman -S make
     6) OpenMPI
     
         # pacman -Syy openmpi
-
