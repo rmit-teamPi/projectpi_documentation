@@ -8,18 +8,31 @@ Arch Linux ARM
    # fdisk /dev/mmcblk0
 
      >> p
+     
      >> d
+     
      >> 2
+     
      >> n
+     
      >> e
+     
      >> (return) = accept default partition no
+     
      >> (return) = accept default start
+     
      >> (return) = accept default end
+     
      >> n
+     
      >> l
+     
      >> (return) = accept default start
+     
      >> (return) = accept default end
+     
      >> p
+     
      >> w
 
    # sync; reboot 
@@ -28,11 +41,17 @@ Arch Linux ARM
 
 - Set the hostname:
    Note: Enter the appropriate hostname for the device being setup:
+          
           masterpi - # echo "masterpi" > /etc/hostname
+          
           slavepi0 - # echo "slavepi0" > /etc/hostname
+          
           slavepi1 - # echo "slavepi1" > /etc/hostname
+          
           slavepi2 - # echo "slavepi2" > /etc/hostname
+          
           slavepi3 - # echo "slavepi3" > /etc/hostname
+          
           slavepi4 - # echo "slavepi4" > /etc/hostname
    
    # echo "hostname" > /etc/hostname
@@ -82,18 +101,12 @@ Arch Linux ARM
             # pacman -Syy
             # pacman -S vim
             
-    3) Git
-    4) Python 2 & 3
-    
-        # pacman -S python2
-        
-        # pacman -S python3
-    5) GCC
+    3) GCC
     
         # pacman -S gcc
-    6) Make
+    4) Make
     
         # pacman -S make
-    6) OpenMPI
+    5) OpenMPI
     
         # pacman -Syy openmpi
