@@ -2,6 +2,8 @@
 Arch Linux Arm
 --------------
 
+OLD!! Ignore this.
+
 - Resizing:
    Note: Where '>>' is shown, enter the command shown followed by the "RETURN/ENTER" key.
    
