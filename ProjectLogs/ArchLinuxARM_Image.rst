@@ -155,7 +155,7 @@ Arch Linux ARM
      # chmod 600 ~/.ssh/authorized_keys
 
 - NFS Configuration:
-   - Server Configuration [masterpi]
+   - **Server Configuration [masterpi]**
 
      # sudo mkdir /cluster_shared
    
@@ -163,9 +163,9 @@ Arch Linux ARM
         
          # sudo vim /etc/exports
 
-         Add the following line to the end of the file:
+           - Add the following line to the end of the file:
             
-         /cluster_shared     *(rw,sync)
+           \/cluster_shared     *(rw,sync)
    
      # sudo chown -R nobody.nobody /cluster_shared
    
@@ -173,21 +173,21 @@ Arch Linux ARM
         
          # sudo vim /etc/conf.d/nfs-common.conf
 
-         Find "STATD_OPTS=". Change it to:
+           - Find "STATD_OPTS=". Change it to:
             
-         STATD_OPTS="-no-notify"
+           STATD_OPTS="-no-notify"
 
-   - Client Configuration [slavepiX]
+   - **Client Configuration [slavepiX]**
    
      - Add the "cluster_shared" NFS share to the client.
      
        # sudo vim /etc/fstab
        
-       Add the following line to the end of the file:
+         - Add the following line to the end of the file:
        
-       172.20.32.82:/cluster_shared /cluster_shared nfs defaults 0 0
+         172.20.32.82:/cluster_shared /cluster_shared nfs defaults 0 0
        
-   - Server Configuration [masterpi]
+   - **Server Configuration [masterpi]**
    
      # sudo systemctl enable sshd.service
      
@@ -208,7 +208,7 @@ Arch Linux ARM
      
      # systemctl is-enabled rpc.idmapd.service
      
-   - Client Configuration [slavepiX]
+   - **Client Configuration [slavepiX]**
    
      # sudo systemctl enable sshd.service
      
