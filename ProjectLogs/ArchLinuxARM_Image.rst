@@ -122,8 +122,34 @@ Arch Linux ARM
 - SSH Configuration:
    OpenSSH setup is a core requirement for OpenMPI functionality.
    
-   1) Generate an SSH Key Pair
-      
-      - Run the following command on all clients
+   - **slavepiX ONLY:**
+     
+     - Follow the steps below for each of the slavepiX nodes.
+   
+     1) Generate an SSH Key Pair
        
-       # ssh-keygen -t rsa -b 2048 -C "$(whoami)@$(hostname)-$(date -I)"
+        # ssh-keygen -t rsa -b 2048 -C "$(whoami)@$(hostname)-$(date -I)"
+       
+           >> (return) = accept default save location
+         
+           >> (return) = accept default 'blank' passphrase
+         
+           >> (return) = confirm default 'blank' passphrase
+   
+     2) Copy SSH Keys from Slave Nodes
+   
+        - Login as 'rpicluster'
+      
+        # scp ~/.ssh/id_rsa.pub rpicluster@<hostname/ip address of masterpi>:
+
+   - **masterpi ONLY:**
+   
+     - Follow the steps below on the masterpi node.
+     
+     # mkdir ~/.ssh
+     
+     # cat ~/id_ecdsa.pub >> ~/.ssh/authorized_keys
+
+     # rm ~/id_ecdsa.pub
+
+     # chmod 600 ~/.ssh/authorized_keys
