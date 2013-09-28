@@ -159,23 +159,23 @@ Arch Linux ARM
 
      # sudo mkdir /cluster_shared
    
-       - Add the "cluster_shared" directory to NFS.
+     - Add the "cluster_shared" directory to NFS.
         
-         # sudo vim /etc/exports
+       # sudo vim /etc/exports
 
-           - Add the following line to the end of the file:
+         - Add the following line to the end of the file:
             
-           \/cluster_shared     *(rw,sync)
+         \/cluster_shared     *(rw,sync)
    
      # sudo chown -R nobody.nobody /cluster_shared
    
-       - Edit the "nfs-common.conf" file.
+     - Edit the "nfs-common.conf" file.
         
-         # sudo vim /etc/conf.d/nfs-common.conf
+       # sudo vim /etc/conf.d/nfs-common.conf
 
-           - Find "STATD_OPTS=". Change it to:
+         - Find "STATD_OPTS=". Change it to:
             
-           STATD_OPTS="-no-notify"
+         STATD_OPTS="-no-notify"
 
    - **Client Configuration [slavepiX]**
    
@@ -193,6 +193,10 @@ Arch Linux ARM
      
      # systemctl is-enabled sshd.service
      
+     
+     # sudo systemctl enable nfsd.service
+     
+     # systemctl is-enabled nfsd.service
      
      # sudo systemctl enable rpcbind.service
      
