@@ -210,7 +210,7 @@ Arch Linux ARM
      
      # sudo systemctl enable rpc-mountd.serivce
      
-     # systemctl is-enabled rpc.idmapd.service
+     # systemctl is-enabled rpc.mountd.service
      
    - **Client Configuration [slavepiX]**
    
@@ -222,3 +222,8 @@ Arch Linux ARM
      # sudo systemctl enable rpcbind.service
      
      # systemctl is-enabled rpcbind.service
+     
+     
+     # sudo systemctl enable rpc-idmapd.service
+     
+     # systemctl is-enabled rpc-idmapd.service
