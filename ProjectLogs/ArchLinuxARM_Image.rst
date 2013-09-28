@@ -93,13 +93,13 @@ Arch Linux ARM
     
        # pacman -S sudo
     
-       - Give "admin" group sudo rights.
+         - Give "admin" group sudo rights.
         
-            # visudo
+           # visudo
 
-            Find "#%wheel ALL=(ALL) ALL". Change it to:
+           Find "#%wheel ALL=(ALL) ALL". Change it to:
             
-            %admin ALL=(ALL) ALL
+           %admin ALL=(ALL) ALL
     2) Vim
     
         # pacman -Syy vim
@@ -153,3 +153,68 @@ Arch Linux ARM
      # rm ~/id_ecdsa.pub
 
      # chmod 600 ~/.ssh/authorized_keys
+
+- NFS Configuration:
+   - Server Configuration [masterpi]
+
+     # sudo mkdir /cluster_shared
+   
+       - Add the "cluster_shared" directory to NFS.
+        
+         # sudo vim /etc/exports
+
+         Add the following line to the end of the file:
+            
+         /cluster_shared     *(rw,sync)
+   
+     # sudo chown -R nobody.nobody /cluster_shared
+   
+       - Edit the "nfs-common.conf" file.
+        
+         # sudo vim /etc/conf.d/nfs-common.conf
+
+         Find "STATD_OPTS=". Change it to:
+            
+         STATD_OPTS="-no-notify"
+
+   - Client Configuration [slavepiX]
+   
+     - Add the "cluster_shared" NFS share to the client.
+     
+       # sudo vim /etc/fstab
+       
+       Add the following line to the end of the file:
+       
+       172.20.32.82:/cluster_shared /cluster_shared nfs defaults 0 0
+       
+   - Server Configuration [masterpi]
+   
+     # sudo systemctl enable sshd.service
+     
+     # systemctl is-enabled sshd.service
+     
+     
+     # sudo systemctl enable rpcbind.service
+     
+     # systemctl is-enabled rpcbind.service
+     
+     
+     # sudo systemctl enable rpc-idmapd.service
+     
+     # systemctl is-enabled rpc-idmapd.service
+     
+     
+     # sudo systemctl enable rpc-mountd.serivce
+     
+     # systemctl is-enabled rpc.idmapd.service
+     
+   - Client Configuration [slavepiX]
+   
+     # sudo systemctl enable sshd.service
+     
+     # systemctl is-enabled sshd.service
+     
+     
+     # sudo systemctl enable rpcbind.service
+     
+     # systemctl is-enabled rpcbind.service
