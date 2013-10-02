@@ -127,8 +127,10 @@ Arch Linux ARM
      - Follow the steps below for each of the slavepiX nodes.
    
      1) Generate an SSH Key Pair
-       
-        # ssh-keygen -t rsa -b 2048 -C "$(whoami)@$(hostname)-$(date -I)"
+   
+        - Login as 'rpicluster'
+      
+        # sudo ssh-keygen -t rsa -b 2048 -C "$(whoami)@$(hostname)-$(date -I)"
        
            >> (return) = accept default save location
          
@@ -137,8 +139,6 @@ Arch Linux ARM
            >> (return) = confirm default 'blank' passphrase
    
      2) Copy SSH Keys from Slave Nodes
-   
-        - Login as 'rpicluster'
       
         # scp ~/.ssh/id_rsa.pub rpicluster@<hostname/ip address of masterpi>:
 
