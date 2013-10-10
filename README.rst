@@ -36,7 +36,7 @@ running at one time and the resources available to them. Compute cluster users r
 resources by submitting jobs to the batch system, which then determines the scheduling that 
 best utilises the resources available.
 
-The **Berry Batch** is a custom back system, which manages the Punnet of Berrries compute 
+The **Berry Batch** is a custom batch system, which manages the Punnet of Berrries compute 
 cluster.
 
 As one of the aims of the Punnet of Berries is to demonstrate scheduling concepts, the Berry 
