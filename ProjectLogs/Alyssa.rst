@@ -4,7 +4,8 @@ Alyssa Biasi's Project Pi Log
 
 Week 1
 ------
-1. Raspberry PI Cross Compiling Recipe
+1. Raspberry PI cross complier recipe - Milestone 1.
+2. Project research.
 
 Week 3
 ------
@@ -67,3 +68,11 @@ Week 7
 ------
 1. Setting up Arch Linux Arm images on 8GB SD cards.
 2. Set up basic documents and sphinx for the final portfolio.
+
+Week 8
+------
+1. Fixing SD cards to cluster specifications.
+
+Week 11
+-------
+1. 
