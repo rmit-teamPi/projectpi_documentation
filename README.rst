@@ -15,7 +15,7 @@ ability to access the computational power that normally only large corporations 
 The Raspberry Pi is a single-board, credit card sized device. It is capable of running Linux, 
 and other light-weight operating systems, with its ARM processors.
 
-.. image:: images/raspberry_pi.jpg
+.. image:: Portfolio/images/raspberry_pi.jpg
     :scale: 70%
     :align: center
     :alt: Pi diagram.
