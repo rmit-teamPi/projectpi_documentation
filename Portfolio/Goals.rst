@@ -1,15 +1,12 @@
-
 .. _goals:
 
 Goals and Objectives
 ====================
 
+
 The Punnet of Berries project aims to create a financially viable Beowulf cluster, which 
 is energy efficient and demonstrates the advantages of parallel computing. This will be 
-achieved by utilising inexpensive hardware and open source technologies. In order to 
-function properly, the system's resources will need to be managed and allocated by a batch 
-scheduler. The Punnet of Berries will be accompanied by a custom batch system, the 
-*Berry Batch*.
+achieved by utilising inexpensive hardware and open source technologies. 
 
 **Priority Objectives**
 

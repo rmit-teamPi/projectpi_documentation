@@ -17,6 +17,13 @@ Project Research
 ----------------
 *About Beowulf*. Retrieved from http://yclept.ucdavis.edu/Beowulf/aboutbeowulf.html
 
+Vaughan-Nichols, S. (2013, May 23). *Build your own supercomputer out of Raspberry Pi boards*.
+Retrieved from 
+http://www.zdnet.com/build-your-own-supercomputer-out-of-raspberry-pi-boards-7000015831
+
+Kiepert, J. (2013, May 22). *RPiCluster*. Retrieved from 
+http://coen.boisestate.edu/ece/files/2013/05/Creating.a.Raspberry.Pi-Based.Beowulf.Cluster_v2.pdf
+
 *The Annual Unnamed UD Internet Contest - Problem 6: Supercomputer Job Scheduling*. 
 Retrieved from http://www.eecis.udel.edu/~breech/contest.inet.fall.09/problems/sc-sched.html
 

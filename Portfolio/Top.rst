@@ -4,11 +4,12 @@ Project Pi - A Punnet of Berries
 
     Intro
     Goals
+    SelfAssessment
     Constraints
     Methodology
     Architecture
     Testing
     Roles
     WorkDone
-    SelfAssessment
+    Summary
     ProjectLogs/References

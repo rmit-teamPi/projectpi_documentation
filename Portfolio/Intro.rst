@@ -1,38 +1,14 @@
 Introduction
 ============
+The aim of the **Punnet of Berries** project is to demonstrate the power of the Raspberry Pi 
+and demonstrate scheduling concepts.
 
-Document Intent
----------------
-This design document serves as a reference, outlining all information pertaining to the 
-Punnet of Berries project. It is intended to provide an overview of design considerations 
-and technical specifications regarding the final implementation. Descriptions of system 
-design will be shown to allow for the understanding of what is to be constructed and how 
-it will be built. This document should not be considered an installation or configuration 
-guide; its primary goal is to detail the design, development, and functionality of the 
-cluster.
-
-Document Overview
------------------
-Outlined in this document is the framework on which the Punnet and its accompanying 
-software were developed. Each iteration in the development process is illustrated in 
-detail in each section, covering system design, architecture, and implementation. Within 
-this are accompanying graphical documentation and requirement specifications to aid in the 
-understanding of system architecture.
-
-Scope
------
-The breadth of the Punnet of Berries project has been intentionally delimited in order to 
-make it feasible in a relatively short period of time. Given the allocated time span in which 
-development has been defined, it is important to delineate any milestones that need to be
-achieved in the early alpha phase of design. This will be covered in :ref:`Goals and Objectives`.
-This design document is focused on core architectural design and critical parts of the system. 
-As the project incorporates many pre-existing systems in conjunction with custom software, a 
-large focus will be attributed to the interaction of these components.
-
+This document outlines the frameowrk on which the **Punnet of Berries** and its accompanying 
+software were developed. System design, architecture and implementation are all covered in 
+the subsequent sections.
 
 The Punnet of Berries
 ---------------------
-
 A Beowulf_ cluster is a supercomputer built out of a collection of (typically) inexpensive 
 computers. The computers are networked together by a local area network, usually Ethernet, 
 and run a parallel processing software. The individual computers become the nodes of the 
@@ -50,9 +26,23 @@ and other light-weight operating systems, with its ARM processors.
 
 The Raspberry Pi is a powerful, yet, low-cost "mini-computer". It was developed to educate and
 inspire the next generation of programmers. **TeamPi** believes that this makes the Raspberry 
-Pi an ideal candiate to create a *Beowulf cluster*.
+Pi an ideal candiate to create a Beowulf cluster.
 
-The **Punnet of Berries** project has created a Raspberry Pi Beowulf cluster.
-
+The **Punnet of Berries** is a *Raspberry Pi Beowulf cluster*.
 
 .. _Beowulf: http://yclept.ucdavis.edu/Beowulf/aboutbeowulf.html
+
+The Berry Batch
+---------------
+In order for a compute cluster to function properly and fairly, its resources must be managed 
+and monitored by a batch system scheduler. Batch systems enforce limits on the number of jobs 
+running at one time and the resources available to them. Compute cluster users request 
+resources by submitting jobs to the batch system, which then determines the scheduling that 
+best utilises the resources available.
+
+The **Berry Batch** is a custom back system, which manages the Punnet of Berrries compute 
+cluster.
+
+As one of the aims of the Punnet of Berries is to demonstrate scheduling concepts, the Berry 
+Batch implements several scheduling algorithms. The user is able to select which algorithm to
+use when the cluster is initialised.
