@@ -2,31 +2,13 @@
 
 Goals and Objectives
 ====================
+The key goals of the Punnet of Berries project were to:
 
+- Create a Beowulf compute cluster
+- Develop a basic batch system scheduler
+- Demonstrate scheduling concepts
+- Develop descriptive documentation so that others may recreate the Punnet of Berries project
 
-The Punnet of Berries project aims to create a financially viable Beowulf cluster, which 
-is energy efficient and demonstrates the advantages of parallel computing. This will be 
-achieved by utilising inexpensive hardware and open source technologies. 
-
-**Priority Objectives**
-
-    - Establish open source tools that will be utilized.
-    - Generate system topology and determine appropriate interfaces.
-    - Develop system and application design.
-    - Determine most appropriate software development methodology.
-
-**Functional Requirements**
-
-    - The user must be able to specify the number of cores to undertake any given job.
-    - The Batch master must be able to support as many slave nodes as possible.
-
-*These requirements will be expanded on throughout development.*
-
-**Non-functional Requirements**
-
-    - Scalability
-    - Testability
-    - Reliability
-    - Documentation
-    - Open Source
+A financially viable Beowulf cluster was created as a part of teh Punnet of Berries project. 
+The cluster is energy efficient and demonstrates the advantages of parallel computing.
 

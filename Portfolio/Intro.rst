@@ -1,7 +1,7 @@
 Introduction
 ============
-The aim of the **Punnet of Berries** project is to demonstrate the power of the Raspberry Pi 
-and demonstrate scheduling concepts.
+The aim of the **Punnet of Berries** project was to create a financially viable Beowulf 
+cluster, evaluate the power of the Raspberry Pi and demonstrate scheduling concepts.
 
 This document outlines the frameowrk on which the **Punnet of Berries** and its accompanying 
 software were developed. System design, architecture and implementation are all covered in 

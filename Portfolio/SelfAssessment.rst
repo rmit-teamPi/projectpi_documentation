@@ -21,7 +21,7 @@ uClibc vs. glibc:
     performance and has additional features not required on a Raspberry Pi. The omitted
     features allow uClibc to function with a smaller amount of memory.
 
-Cros-Compliers:
+Cross-Compliers:
     A cross-compiler is critical in the creation of executables that are able to function
     on architectures that differ from the platform on which the code was developed.
 
