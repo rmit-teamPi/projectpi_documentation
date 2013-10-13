@@ -75,4 +75,8 @@ Week 8
 
 Week 11
 -------
-1. 
+1. Portfolio
+
+Week 12
+-------
+1. Portfolio
