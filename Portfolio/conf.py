@@ -60,7 +60,7 @@ language = None
 
 # There are two options for replacing |today|: either, you set today to some
 # non-false value, then it is used:
-today = ''
+today = 'COSC1114 - Operating Systems Principles: Friday 14:30'
 # Else, today_fmt is used as the format for a strftime call.
 #today_fmt = '%B %d, %Y'
 
@@ -225,8 +225,8 @@ latex_elements = {
 # Grouping the document tree into LaTeX files. List of tuples
 # (source start file, target name, title, author, documentclass [howto/manual]).
 latex_documents = [
-  (master_doc, 'APunnetofBerries.tex', u'A Punnet of Berries Documentation',
-   u'TeamPi', 'manual'),
+  (master_doc, 'APunnetofBerries.tex', u'A Punnet of Berries - Documentation',
+    u'TeamPi: Adrian Zielonka, Alyssa Biasi, Zach Ryan', 'manual'),
 ]
 
 # The name of an image file (relative to this directory) to place at the top of

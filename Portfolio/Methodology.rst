@@ -1,29 +1,28 @@
------------
 Methodology
------------
+===========
 
 Collaboration Tools
 -------------------
-
 The collaboration tools utilised for the development of the Punnet of Berries project
 reflect the Open Source nature of the project.
 
-**Version Control**
-All code and documentation relating to the Punnet of Berries project will be hosted in
-repositories on GitHub_ under the *rmit-teamPi* organisation.
+Version Control:
+    All code and documentation relating to the Punnet of Berries project is hosted in
+    repositories on GitHub_ under the *rmit-teamPi* organisation. GitHub was chosen as it
+    allows individual team members to use either Git or SVN depending on their own preferences.
+
+Project Management:
+    The project and bug-tracking was managed using Redmine_, an open source web-based project 
+    management tool. The team's Redmine account was hosted on HostedRedmine_, a service that 
+    hosts standard Redmine projects for free.
 
 .. _GitHub: https://github.com/rmit-teamPi
-
-**Project Management**
-The project and bug-tracking will be managed using Redmine, an open source web-based project 
-management tool. The Redmine account will be hoseted for free on HostedRedmine_.
-
+.. _Redmine: http://www.redmine.org
 .. _HostedRedmine: https://www.hostedredmine.com
 
 
-Development
------------
-
+Development Tools
+-----------------
 Given the collaborative effort of the development process, it is prudent to define the 
 best practices and design principles to abide by. All protocols must adhere to a certain 
 standard to promote scalability and ease of use. 
