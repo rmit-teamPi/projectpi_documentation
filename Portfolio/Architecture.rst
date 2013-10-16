@@ -6,12 +6,11 @@ Architecture
 -------------
 System Design
 -------------
-
 *A chain is only as strong as its weakest link.*
 
 In a distributed model super computer, this statement cannot be more true. No matter how 
 quickly each individual node can process its allocated tasks, if the communications link 
-between the master system and each of the slave nodes becomes a bottleneck, then the 
+between the system's master and each of the slave nodes becomes a bottleneck, then the
 entire system will suffer in performance.
 
 .. image:: images/topology.jpg
@@ -26,30 +25,29 @@ the key requirements of efficiency, flexibility and reliability are met.
 
 Efficiency
 ----------
-By design, star networks utilise a central hub such as a networking switch to
+By design, star networks utilise a central device, such as a networking switch, to
 handle to flow of packets in a network. This allows data packets to only travel
 to those nodes which they are intended for, reducing the overall traffic in the
 network.
 
 Flexibility
 -----------
-By utilising a central hub for communications, a star network can easily be
+By utilising a central device for communications, a star network can easily be
 expanded to support additional nodes without affecting the entire network.
 Furthermore nodes can be removed at any time, if servicing is required.
 
 Redundancy
 ----------
-By utilising a central hub for communications, the likelihood of total system
-failure is greatly reduced. Whilst failure of the central hub would mean that
-the entire system is brought down, failure of an individual node wouldn't have
-any affect on the overall system.
+The likelihood of total system failure is greatly reduced by using a central device for
+communication. The failure of an individual node wouldn't have any effect on the overall
+system. However, the central device failing would be catastrophic, bringing the entire 
+system down.
 
 
 --------------
 Program Design
 --------------
-
-The Berry Batch will consist of a centralised manager daemon and worker daemons.
+The Berry Batch will consist of a centralised manager daemon and worker daemons. 
 
 Each node in the Punnet of Berries cluster will run a Berry Batch worker daemon. These
 workers exist to execute the jobs submitted to the system. The workers will:
@@ -83,7 +81,6 @@ directly with the Berry Batch manager to manage their job requests. A user is ab
 
 Submitting Jobs
 ---------------
-
 Users will write job scripts, which will be passed to the Berry Batch manager. A job script
 will consist of header and execution sections. The header section will specify the job 
 details for queueing by Berry Batch. This could include a name for the job, the memory 
@@ -116,7 +113,6 @@ fashion.
 
 Job Execution
 -------------
-
 Once a job has been submitted, it will move through the following states:
 
     1. Queued

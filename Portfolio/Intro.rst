@@ -11,9 +11,9 @@ The Punnet of Berries
 ---------------------
 A Beowulf_ cluster is a supercomputer built out of a collection of (typically) inexpensive 
 computers. The computers are networked together by a local area network, usually Ethernet, 
-and run a parallel processing software. The individual computers become the nodes of the 
-supercomputer, which are combined together to form a single system. This concept puts the 
-power of supercomputing into the hands of small research groups and schools. It gives them the 
+and run a parallel processing software. The individual computers are combined together to 
+form a single system, becoming the nodes of the supercomputer. This concept puts the power
+of supercomputing into the hands of small research groups and schools. It gives them the 
 ability to access the computational power that normally only large corporations can afford.
 
 The Raspberry Pi is a single-board, credit card sized device. It is capable of running Linux, 

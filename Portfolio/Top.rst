@@ -2,9 +2,9 @@ Project Pi - A Punnet of Berries
 ================================
 .. toctree::
 
+    SelfAssessment
     Intro
     Goals
-    SelfAssessment
     Constraints
     Methodology
     Architecture
