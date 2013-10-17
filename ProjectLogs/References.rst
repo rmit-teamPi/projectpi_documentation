@@ -92,3 +92,6 @@ OpenMPI
 -------
 *OpenMPI.org - Running*.
 Retrieved from http://www.open-mpi.org/faq/?category=running
+
+*Wikipedia.org - Message Passing Interface*.
+Retrieved from http://en.wikipedia.org/wiki/Message_Passing_Interface#Example_program
