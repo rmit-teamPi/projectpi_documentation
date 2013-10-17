@@ -1,5 +1,8 @@
 Self Assessment
 ===============
+.. toctree::
+
+    Methodology
 
 ------------
 Milestone 01

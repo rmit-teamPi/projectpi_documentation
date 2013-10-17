@@ -6,8 +6,8 @@ Project Pi - A Punnet of Berries
     Intro
     Goals
     Constraints
-    Methodology
     Architecture
+    ProgramDesign
     Testing
     Roles
     WorkDone
