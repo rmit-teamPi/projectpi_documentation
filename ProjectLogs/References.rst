@@ -38,6 +38,40 @@ http://www.cs.uic.edu/~jbell/CourseNotes/OperatingSystems/5_CPU_Scheduling.html
 
 Arch Linux ARM
 --------------
+*Arch Linux ARM - Download Page*.
+Retrieved from http://archlinuxarm.org/platforms/armv6/raspberry-pi
+
+*Arch Linux ARM - Install Guide*. 
+Retrieved from http://elinux.org/ArchLinux_Install_Guide
+
+*Arch Linux ARM Forums - Resizing SD Card via command line*.
+Retrieved from http://archlinuxarm.org/forum/viewtopic.php?f=31&t=3119
+
+*Arch Linux ARM Wiki - Keyboard shortcuts*.
+Retrieved from https://wiki.archlinux.org/index.php/Keyboard_Shortcuts
+
+*Arch Linux ARM Wiki - Pacman-key*.
+Retrieved from https://wiki.archlinux.org/index.php/Pacman-key
+
+*Arch Linux ARM Wiki - Sudo*.
+Retrieved from https://wiki.archlinux.org/index.php/Sudo
+
+*Arch Linux ARM Wiki - Users and Groups*.
+Retrieved from https://wiki.archlinux.org/index.php/Users_and_Groups
+
+
+
+*Arch Linux ARM Wiki - *.
+Retrieved from
+
+*Arch Linux ARM Wiki - *.
+Retrieved from
+
+*Arch Linux ARM Wiki - *.
+Retrieved from
+
+
+
 Nelson, D. (2013, June 16). *Growing the root filesystem on Arch Linux ARM for the*
 *Raspberry Pi*. Retrieved from http://davidnelson.me/?p=218
 
@@ -50,5 +84,7 @@ http://qdosmsq.dunbar-it.co.uk/blog/2013/06/beginners-guide-to-arch-linux-on-the
 
 *Beginners' Guide - ArchWiki*. Retrieved from https://wiki.archlinux.org/index.php/Beginners'_Guide
 
-*Arch Linux Install Guide*. Retrieved from http://elinux.org/ArchLinux_Install_Guide
-
+OpenMPI
+-------
+*OpenMPI.org - Running*.
+Retrieved from http://www.open-mpi.org/faq/?category=running
