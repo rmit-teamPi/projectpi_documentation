@@ -33,6 +33,9 @@ https://computing.llnl.gov/linux/slurm/overview.html
 *Sample PBS Script for Serial Job*. Retrieved from 
 http://qcd.phys.cmu.edu/QCDcluster/pbs/run_serial.html
 
+Bell, J. *Operating Systems: CPU Scheduling*. Retrieved from 
+http://www.cs.uic.edu/~jbell/CourseNotes/OperatingSystems/5_CPU_Scheduling.html
+
 Arch Linux ARM
 --------------
 Nelson, D. (2013, June 16). *Growing the root filesystem on Arch Linux ARM for the*

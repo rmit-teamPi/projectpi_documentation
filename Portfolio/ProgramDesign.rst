@@ -36,5 +36,13 @@ The **First-Come-First Served (FCFS)** algorithm is very simple. As the name sug
 are processed in the order that they are submitted. While the FCFS algorithm is very simple 
 and easy to implement, its simplicity can also be its biggest flaw.
 
-As the running order is determined only by arrival time, the waiting time for jobs in queue 
-can vary greatly.
+As shown in the following image, the waiting time for jobs in queue can vary greatly.
+
+.. image:: images/FCFS.jpg
+    :scale: 70%
+    :align: center
+    :alt: FCFS
+
+This is due to the running order being determined only by the job arrival time. Ignoring
+other factors, such as the estimated length of the job, often results in the CPU and device
+utilisation being lower than it could have been had shorter running jobs been scheduled first.
