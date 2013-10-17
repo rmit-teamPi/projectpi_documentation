@@ -41,11 +41,14 @@ Arch Linux ARM
 *Arch Linux ARM - Download Page*.
 Retrieved from http://archlinuxarm.org/platforms/armv6/raspberry-pi
 
-*Arch Linux ARM - Install Guide*. 
-Retrieved from http://elinux.org/ArchLinux_Install_Guide
+*Arch Linux ARM - Official Installation Guide
+Retrieved from https://wiki.archlinux.org/index.php/Official_Installation_Guide
 
 *Arch Linux ARM Forums - Resizing SD Card via command line*.
 Retrieved from http://archlinuxarm.org/forum/viewtopic.php?f=31&t=3119
+
+*Arch Linux ARM Wiki - Beginners' Guide - ArchWiki*.
+Retrieved from https://wiki.archlinux.org/index.php/Beginners'_Guide
 
 *Arch Linux ARM Wiki - Keyboard shortcuts*.
 Retrieved from https://wiki.archlinux.org/index.php/Keyboard_Shortcuts
@@ -53,24 +56,20 @@ Retrieved from https://wiki.archlinux.org/index.php/Keyboard_Shortcuts
 *Arch Linux ARM Wiki - Pacman-key*.
 Retrieved from https://wiki.archlinux.org/index.php/Pacman-key
 
+*Arch Linux ARM Wiki - SSH Keys*.
+Retrieved from https://wiki.archlinux.org/index.php/SSH_Keys
+
 *Arch Linux ARM Wiki - Sudo*.
 Retrieved from https://wiki.archlinux.org/index.php/Sudo
 
 *Arch Linux ARM Wiki - Users and Groups*.
 Retrieved from https://wiki.archlinux.org/index.php/Users_and_Groups
 
-
-
 *Arch Linux ARM Wiki - *.
 Retrieved from
 
-*Arch Linux ARM Wiki - *.
-Retrieved from
-
-*Arch Linux ARM Wiki - *.
-Retrieved from
-
-
+*ELinux.org - Install Guide*. 
+Retrieved from http://elinux.org/ArchLinux_Install_Guide
 
 Nelson, D. (2013, June 16). *Growing the root filesystem on Arch Linux ARM for the*
 *Raspberry Pi*. Retrieved from http://davidnelson.me/?p=218
@@ -82,7 +81,12 @@ Norman (2013, June 12). *Beginner's Guide to Arch Linux on the Raspberry Pi - Pa
 Retrieved from 
 http://qdosmsq.dunbar-it.co.uk/blog/2013/06/beginners-guide-to-arch-linux-on-the-raspbery-pi-part-2/
 
-*Beginners' Guide - ArchWiki*. Retrieved from https://wiki.archlinux.org/index.php/Beginners'_Guide
+Van Der Veen, B. (2012). *I booted and SSH’d into my Raspberry Pi!*.
+Retrieved from http://bvanderveen.com/a/rpi-booted-static-ip-ssh/
+
+Apparatus, D. (2012, April 18). *HPC High Performance Compute Cluster with MPI and Arch*.
+Retrieved from
+http://apparatusd.wordpress.com/2012/04/18/hpc-high-performance-compute-cluster-with-mpi-and-arch/
 
 OpenMPI
 -------
