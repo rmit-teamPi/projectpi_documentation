@@ -31,7 +31,6 @@ System Design
 *A chain is only as strong as its weakest link.*
 
 .. image:: images/Cluster02.png
-	:scale: 70%
 	:align: center
 	:alt: The Punnet of Berries
 

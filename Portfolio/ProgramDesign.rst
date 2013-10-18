@@ -5,14 +5,16 @@ Punnet of Berries' centralised master node runs the manager daemon, each slave n
 a worker daemon.
 
 .. image:: images/MasterAndSlaves.JPG
-    :scale: 70%
     :align: center
     :alt: Master Pi and Slaves
 
 The Berry Batch manager iteratively pulls submitted jobs from the queue and determines 
 the most appropriate slave to carry out the job. This is done by monitoring the system's
-resrouces and the jobs running or waiting. Users interact directly with the Berry 
-Batch manager to manage their job requests. A user is able to:
+resrouces and the jobs running or waiting.
+
+Users are able to interact directly with the Berry Batch manager to manage their job 
+requests. The manager daemon receives user requests by listening to a port. The user 
+invokes a helper that sends a connect request to the port. A user is able to:
 
     - Submit jobs.
     - View all queued jobs.
@@ -27,6 +29,10 @@ fashion. They will:
     2. Execute the job.
     3. Return the job's exit status.
     4. Back to 1.
+
+.. image:: images/SlaveStates.jpg
+    :align: right
+    :alt: Slave states
 
 ---------------------
 Scheduling Algorithms
@@ -59,7 +65,7 @@ then run based on their priority, with the highest priority being run first.
 
 When a job is submitted, the Berry Batch manager determines which priority queue the job 
 should be assigned to. This is done by taking into account the estimated walltime and the 
-resources requested. The priority queues are:
+resources requested. The priority queues are defined as:
 
 +-----------+---------------+-------------+
 | Priority  | Max Walltime  | Resources   |
@@ -76,8 +82,8 @@ resources requested. The priority queues are:
 
 .. note::
 
-    As jobs in the special queue require the entire cluster, these jobs need special
-    permission from the Punnet of Berries administrator before running.
+    As jobs in the special queue require use of the entire cluster, they need 
+    special permission from the Punnet of Berries administrator before running.
 
 .. image:: images/Priority.jpg
     :scale: 70%
@@ -94,7 +100,7 @@ priority jobs are forced to wait indefinitely or are never run. This can occur w
 with higher priority are submitted before the low priority job runs, blocking the lower 
 priority job.
 
-There are two fixes to this problem.
+Two of the possible ways to fix this problem are:
 
     1. The job priorities can be re-evaluated based on how long they have been waiting. 
     This would prevent low priority jobs from never running. After they reach a pre-defined 
