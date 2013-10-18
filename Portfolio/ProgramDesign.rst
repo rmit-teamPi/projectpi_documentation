@@ -12,9 +12,17 @@ The Berry Batch manager iteratively pulls submitted jobs from the queue and dete
 the most appropriate slave to carry out the job. This is done by monitoring the system's
 resrouces and the jobs running or waiting.
 
-Users are able to interact directly with the Berry Batch manager to manage their job 
-requests. The manager daemon receives user requests by listening to a port. The user 
-invokes a helper that sends a connect request to the port. A user is able to:
+Users are able to remotely connect to the Punnet of Berries using Secure Shell (SSH). They
+can then interact directly with the Berry Batch manager to manage their job requests. The 
+manager daemon receives user requests by listening to a port. The user invokes a helper 
+which sends a connect request to the port.
+
+.. image:: images/UserInterface.jpg
+    :scale: 70%
+    :align: center
+    :alt: User Interface
+
+A user is able to:
 
     - Submit jobs.
     - View all queued jobs.

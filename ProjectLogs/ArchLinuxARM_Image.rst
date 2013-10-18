@@ -18,7 +18,7 @@ Setting up Arch Linux ARM
        
        >> e
        
-       >> (return) = accept default partition no
+       >> (return) = accept default partition number
        
        >> (return) = accept default start
        
