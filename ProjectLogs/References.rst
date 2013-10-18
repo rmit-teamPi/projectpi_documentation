@@ -36,6 +36,10 @@ http://qcd.phys.cmu.edu/QCDcluster/pbs/run_serial.html
 Bell, J. *Operating Systems: CPU Scheduling*. Retrieved from 
 http://www.cs.uic.edu/~jbell/CourseNotes/OperatingSystems/5_CPU_Scheduling.html
 
+Apparatus, D. (2012, April 18). *HPC High Performance Compute Cluster with MPI and Arch*.
+Retrieved from
+http://apparatusd.wordpress.com/2012/04/18/hpc-high-performance-compute-cluster-with-mpi-and-arch/
+
 Arch Linux ARM
 --------------
 *Arch Linux ARM - Download Page*.
@@ -65,9 +69,6 @@ Retrieved from https://wiki.archlinux.org/index.php/Sudo
 *Arch Linux ARM Wiki - Users and Groups*.
 Retrieved from https://wiki.archlinux.org/index.php/Users_and_Groups
 
-*Arch Linux ARM Wiki - *.
-Retrieved from
-
 *ELinux.org - Install Guide*. 
 Retrieved from http://elinux.org/ArchLinux_Install_Guide
 
@@ -83,10 +84,6 @@ http://qdosmsq.dunbar-it.co.uk/blog/2013/06/beginners-guide-to-arch-linux-on-the
 
 Van Der Veen, B. (2012). *I booted and SSH’d into my Raspberry Pi!*.
 Retrieved from http://bvanderveen.com/a/rpi-booted-static-ip-ssh/
-
-Apparatus, D. (2012, April 18). *HPC High Performance Compute Cluster with MPI and Arch*.
-Retrieved from
-http://apparatusd.wordpress.com/2012/04/18/hpc-high-performance-compute-cluster-with-mpi-and-arch/
 
 OpenMPI
 -------

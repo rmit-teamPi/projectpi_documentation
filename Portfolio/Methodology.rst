@@ -13,6 +13,15 @@ Project Management:
     management tool. The team's Redmine account was hosted on HostedRedmine_, a service that 
     hosts standard Redmine projects for free.
 
+Group Communication:
+    Aside from weekly group meetings, our main avenues for group communication were a TeamPi 
+    Facebook group and Skype chat sessions.
+
+.. note::
+
+    **Note:** No matter the collaboration tools used or how organised TeamPi was, unless
+    everyone was willing cooperate the project would fail.
+
 .. _GitHub: https://github.com/rmit-teamPi
 .. _Redmine: http://www.redmine.org
 .. _HostedRedmine: https://www.hostedredmine.com
