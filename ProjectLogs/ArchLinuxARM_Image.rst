@@ -4,56 +4,58 @@ Setting up Arch Linux ARM
 
 - Resizing:
 
-   # fdisk /dev/mmcblk0
+  ::
 
-     >> p
-     
-     >> d
-     
-     >> 2
-     
-     >> n
-     
-     >> e
-     
-     >> (return) = accept default partition no
-     
-     >> (return) = accept default start
-     
-     >> (return) = accept default end
-     
-     >> n
-     
-     >> l
-     
-     >> (return) = accept default start
-     
-     >> (return) = accept default end
-     
-     >> p
-     
-     >> w
+     # fdisk /dev/mmcblk0
 
-   # sync; reboot 
+       >> p
+       
+       >> d
+       
+       >> 2
+       
+       >> n
+       
+       >> e
+       
+       >> (return) = accept default partition no
+       
+       >> (return) = accept default start
+       
+       >> (return) = accept default end
+       
+       >> n
+       
+       >> l
+       
+       >> (return) = accept default start
+       
+       >> (return) = accept default end
+       
+       >> p
+       
+       >> w
 
-   # resize2fs /dev/mmcblk0p5
+     # sync; reboot 
+
+     # resize2fs /dev/mmcblk0p5
 
 - Set the timezone:
 
-   # ln -s /usr/share/zoneinfo/Australia/Melbourne /etc/localtime
+   ``# ln -s /usr/share/zoneinfo/Australia/Melbourne /etc/localtime``
 
 - Update System:
 
-   # pacman-key --init
+   ``# pacman-key --init``
 
    Press (Alt+F2) to switch to a 2nd virtual console, then enter the following command:
 
-   # ls -R / && ls -R / && ls -R /
+   ``# ls -R / && ls -R / && ls -R /``
 
    Press (Alt+F1) to swtich back 1st virtual console.
    Check whether the "pacman-key --init" command has finished running.
 
-   # pacman -Syu
+  ``# pacman -Syu``
 
 - Users and Groups:
 
@@ -62,38 +64,44 @@ Setting up Arch Linux ARM
         Username: rpicluster
    
         Password: rpicluster
+
+  ::
       
-    # useradd -m <username>
+      # useradd -m <username>
 
-    # passwd <username>
+      # passwd <username>
 
-    # groupadd admin
+      # groupadd admin
 
-    # gpasswd -a <username> admin
+      # gpasswd -a <username> admin
 
 
 - Install the following using Arch Linux's package manager (pacman).
     
     1. **Sudo:**
-       # pacman -S sudo
+       
+       ``# pacman -S sudo``
     
-         - Give "admin" group sudo rights.
-        
-           # visudo
+       - Give "admin" group sudo rights.
+      
+      ::
 
-           Find "#%wheel ALL=(ALL) ALL". Change it to:
-            
-           %admin ALL=(ALL) ALL
+         # visudo
+
+         Find "#%wheel ALL=(ALL) ALL". Change it to:
+          
+         %admin ALL=(ALL) ALL
+
     2. Vim:
-        # pacman -Syy vim
+        ``# pacman -Syy vim``
     3. GCC:
-        # pacman -Syy gcc
+        ``# pacman -Syy gcc``
     4. Make:
-        # pacman -Syy make
+        ``# pacman -Syy make``
     5. OpenMPI:
-        # pacman -Syy openmpi
+        ``# pacman -Syy openmpi``
     6. OpenSSH:
-        # pacman -Syy openssh
+        ``# pacman -Syy openssh``
     7. NFS:
-        # pacman -Syy nfs-utils
+        ``# pacman -Syy nfs-utils``
 
