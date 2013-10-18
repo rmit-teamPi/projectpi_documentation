@@ -30,6 +30,8 @@ overclocking available). Due to this, any software developed for a Raspberry Pi 
 in languages that are high-level, architecturally dependent and need to be recompiled on the
 Pi itself.
 
+Operating System
+----------------
 As there are several pre-configured Linux operating system images for the Raspberry Pi, it 
 was decided that it was not necessary to create a custom Linux-From-Scratch image. In order
 to choose an appropriate operating system, it was necessary to evaluate the compute cluster's 
@@ -39,8 +41,8 @@ basic needs. The key factors in the decision making process were:
 - Size
 - Compatibility
 
-With this in mind, each node in the Punnet of Berries runs the **Arch Linux Arm** operating 
-system. Arch Linux is:
+With this in mind, it was decided that each node in the Punnet of Berries would run the 
+**Arch Linux Arm** operating system. Arch Linux is:
 
 - ARM compatible.
 - Light-weight
@@ -51,3 +53,22 @@ system. Arch Linux is:
 
     - Allowing the entire cluster to *boot in under 20 seconds*.
 
+Programming Language
+--------------------
+When selecting a programming language for the development of the Berry Batch scheduler, the 
+key concerns were:
+
+- Efficiency - as mentioned in the previous section, performance is a key issue when 
+    construcing a compute cluster.
+- The existence of a Message Passing Interface (MPI) library.
+- Ease of use.
+
+It was decided that **C** would best suit these requirements. C is:
+
+- A high level language.
+- Efficient.
+- Lightweight.
+
+There is also a readily available MPI implementation. *OpenMPI* is an open source 
+implementation of the MPI-2 specification. The Berry Batch utilises OpenMPI for communication
+with the cluster.

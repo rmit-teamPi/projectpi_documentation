@@ -3,7 +3,7 @@ Zach Ryan's Log
 
 .. note::
 
-    **Note from Alyssa:** As you can see, Zach created this empty template and never
+    **Note:** As you can see, Zach created this empty template and never
     filled it in.
 
 Week 1

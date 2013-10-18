@@ -55,7 +55,7 @@ Setting up Arch Linux ARM
    Press (Alt+F1) to swtich back 1st virtual console.
    Check whether the "pacman-key --init" command has finished running.
 
-  ``# pacman -Syu``
+   ``# pacman -Syu``
 
 - Users and Groups:
 
@@ -83,14 +83,12 @@ Setting up Arch Linux ARM
        ``# pacman -S sudo``
     
        - Give "admin" group sudo rights.
-      
-      ::
 
-         # visudo
+       ``# visudo``
 
-         Find "#%wheel ALL=(ALL) ALL". Change it to:
+       Find "#%wheel ALL=(ALL) ALL". Change it to:
           
-         %admin ALL=(ALL) ALL
+       ``%admin ALL=(ALL) ALL``
 
     2. Vim:
         ``# pacman -Syy vim``
