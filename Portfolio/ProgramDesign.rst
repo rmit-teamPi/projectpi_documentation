@@ -4,7 +4,7 @@ The Berry Batch consists of a centralised manager daemon and worker daemons. Whi
 Punnet of Berries' centralised master node runs the manager daemon, each slave node runs 
 a worker daemon.
 
-.. image:: images/MasterAndSlave.jpg
+.. image:: images/MasterAndSlaves.JPG
     :scale: 70%
     :align: center
     :alt: Master Pi and Slaves
@@ -61,10 +61,23 @@ When a job is submitted, the Berry Batch manager determines which priority queue
 should be assigned to. This is done by taking into account the estimated walltime and the 
 resources requested. The priority queues are:
 
-    - Low
-    - Medium
-    - High
-    - Special (requires permission from the Punnet of Berries administration to run)
++-----------+---------------+-------------+
+| Priority  | Max Walltime  | Resources   |
+|           | (minutes)     | (no. nodes) |
++===========+===============+=============+
+| Low       |  15 mins      |     1 - 2   | 
++-----------+---------------+-------------+
+| Medium    |  30 mins      |     1 - 3   |
++-----------+---------------+-------------+
+| High      |  45 mins      |     2 - 4   |
++-----------+---------------+-------------+
+| Special   |  > 60 mins    |     1 - 5   |
++-----------+---------------+-------------+
+
+.. note::
+
+    As jobs in the special queue require the entire cluster, these jobs need special
+    permission from the Punnet of Berries administrator before running.
 
 .. image:: images/Priority.jpg
     :scale: 70%
