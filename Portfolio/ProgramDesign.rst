@@ -31,7 +31,8 @@ fashion. They will:
     4. Back to 1.
 
 .. image:: images/SlaveStates.jpg
-    :align: right
+    :scale: 50%
+    :align: center
     :alt: Slave states
 
 ---------------------
@@ -135,3 +136,4 @@ If the time quantum is large enough, the RR algorithm can turn into FCFS. If the
 extremely small, the RR algorithm can create the apperance of each job having its processor.
 However, the size of the quantum must make up for the overhead of stopping one job to start/
 re-start another.
+

@@ -7,7 +7,9 @@ Project Pi - A Punnet of Berries
     Goals
     Constraints
     Architecture
+    OperatingSystem
     ProgramDesign
+    SourceCode
     Testing
     Roles
     WorkDone

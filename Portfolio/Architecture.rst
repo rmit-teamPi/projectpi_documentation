@@ -31,8 +31,9 @@ System Design
 *A chain is only as strong as its weakest link.*
 
 .. image:: images/Cluster02.png
-	:align: center
-	:alt: The Punnet of Berries
+    :scale: 80%
+    :align: center
+    :alt: Topology diagram.
 
 In a distributed model super computer, this statement cannot be more true. No matter how 
 quickly each individual node can process its allocated tasks, if the communications link 
@@ -68,18 +69,3 @@ The likelihood of total system failure is greatly reduced by using a central dev
 communication. The failure of an individual node wouldn't have any effect on the overall
 system. However, the central device failing would be catastrophic, bringing the entire 
 system down.
-
-
---------------------
-The Operating System
---------------------
-As discussed earlier, it was decided that **Arch Linux ARM** would be the Punnet of Berries'
-operating system.
-
-The following section describes the steps that were taken to configure a basic Arch Linux 
-image for use in the compute cluster. The base image was obtained from the Raspberry Pi
-downloads page (http://www.raspberrypi.org/downloads).
-
-.. toctree::
-   
-    ProjectLogs/ArchLinuxARM_Image

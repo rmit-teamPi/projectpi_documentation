@@ -46,3 +46,10 @@ cluster.
 As one of the aims of the Punnet of Berries is to demonstrate scheduling concepts, the Berry 
 Batch implements several scheduling algorithms. The user is able to select which algorithm to
 use when the cluster is initialised.
+
+.. note::
+
+    **Please note:**
+    
+    Due to unforeseen circumstances, the Berry Batch application has not been completed.
+    Any reference to the Berry Batch is speculation based on the original design.
