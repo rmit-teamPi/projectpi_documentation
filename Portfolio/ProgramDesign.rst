@@ -18,7 +18,7 @@ manager daemon receives user requests by listening to a port. The user invokes a
 which sends a connect request to the port.
 
 .. image:: images/UserInterface.jpg
-    :scale: 70%
+    :scale: 60%
     :align: center
     :alt: User Interface
 
@@ -95,7 +95,7 @@ resources requested. The priority queues are defined as:
     special permission from the Punnet of Berries administrator before running.
 
 .. image:: images/Priority.jpg
-    :scale: 70%
+    :scale: 80%
     :align: center
     :alt: Priority
 
