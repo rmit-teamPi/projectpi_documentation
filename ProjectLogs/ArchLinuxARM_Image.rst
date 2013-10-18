@@ -74,7 +74,7 @@ Setting up Arch Linux ARM
 
 - Install the following using Arch Linux's package manager (pacman).
     
-    1) Sudo:
+    1. **Sudo:**
        # pacman -S sudo
     
          - Give "admin" group sudo rights.
@@ -84,16 +84,16 @@ Setting up Arch Linux ARM
            Find "#%wheel ALL=(ALL) ALL". Change it to:
             
            %admin ALL=(ALL) ALL
-    2) Vim:
+    2. Vim:
         # pacman -Syy vim
-    3) GCC:
+    3. GCC:
         # pacman -Syy gcc
-    4) Make:
+    4. Make:
         # pacman -Syy make
-    5) OpenMPI:
+    5. OpenMPI:
         # pacman -Syy openmpi
-    6) OpenSSH:
+    6. OpenSSH:
         # pacman -Syy openssh
-    7) NFS:
+    7. NFS:
         # pacman -Syy nfs-utils
 

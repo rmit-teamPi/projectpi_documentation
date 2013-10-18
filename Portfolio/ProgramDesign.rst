@@ -78,16 +78,15 @@ priority job.
 
 There are two fixes to this problem.
 
-1. The job priorities can be re-evaluated based on how long they have been waiting. This
-would prevent low priority jobs from never running. After they reach a pre-defined wait
-threshold the job will be re-evalutated to a higher priority.
+    1. The job priorities can be re-evaluated based on how long they have been waiting. 
+    This would prevent low priority jobs from never running. After they reach a pre-defined 
+    wait threshold the job will be re-evalutated to a higher priority.
 
-2. One or two of the compute cluster's nodes could be reserved for low priority jobs. These
-nodes would work their way through the low priority queue. Once the queue is empty, the 
-reserved nodes can be opened up to service the other queues. After completing jobs from the 
-higher priority queues, a check will be performed to determine if there are jobs waiting in 
-low priority queue.
-
+    2. One or two of the compute cluster's nodes could be reserved for low priority jobs. 
+    These nodes would work their way through the low priority queue. Once the queue is empty, 
+    the reserved nodes can be opened up to service the other queues. After completing jobs 
+    from the higher priority queues, a check will be performed to determine if there are 
+    jobs waiting in low priority queue.
 
 Round-Robin
 -----------
