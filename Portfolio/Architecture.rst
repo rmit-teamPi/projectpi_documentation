@@ -30,6 +30,11 @@ System Design
 -------------
 *A chain is only as strong as its weakest link.*
 
+.. image:: images/Cluster02.png
+	:scale: 70%
+	:align: center
+	:alt: The Punnet of Berries
+
 In a distributed model super computer, this statement cannot be more true. No matter how 
 quickly each individual node can process its allocated tasks, if the communications link 
 between the system's master and each of the slave nodes becomes a bottleneck, then the

@@ -1,9 +1,13 @@
 Program Design
 ==============
-
 The Berry Batch consists of a centralised manager daemon and worker daemons. While the 
 Punnet of Berries' centralised master node runs the manager daemon, each slave node runs 
 a worker daemon.
+
+.. image:: images/MasterAndSlave.jpg
+    :scale: 70%
+    :align: center
+    :alt: Master Pi and Slaves
 
 The Berry Batch manager iteratively pulls submitted jobs from the queue and determines 
 the most appropriate slave to carry out the job. This is done by monitoring the system's
@@ -36,7 +40,8 @@ The **First-Come-First Served (FCFS)** algorithm is very simple. As the name sug
 are processed in the order that they are submitted. While the FCFS algorithm is very simple 
 and easy to implement, its simplicity can also be its biggest flaw.
 
-As shown in the following image, the waiting time for jobs in queue can vary greatly.
+As shown in the following image, the waiting time for jobs in queue can vary greatly depending
+on the order jobs are submitted.
 
 .. image:: images/FCFS.jpg
     :scale: 70%
