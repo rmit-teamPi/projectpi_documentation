@@ -45,13 +45,13 @@ Arch Linux ARM
 *Arch Linux ARM - Download Page*.
 Retrieved from http://archlinuxarm.org/platforms/armv6/raspberry-pi
 
-*Arch Linux ARM - Official Installation Guide
+*Arch Linux ARM - Official Installation Guide*.
 Retrieved from https://wiki.archlinux.org/index.php/Official_Installation_Guide
 
 *Arch Linux ARM Forums - Resizing SD Card via command line*.
 Retrieved from http://archlinuxarm.org/forum/viewtopic.php?f=31&t=3119
 
-*Arch Linux ARM Wiki - Beginners' Guide - ArchWiki*.
+*Arch Linux ARM Wiki - Beginners' Guide*.
 Retrieved from https://wiki.archlinux.org/index.php/Beginners'_Guide
 
 *Arch Linux ARM Wiki - Keyboard shortcuts*.

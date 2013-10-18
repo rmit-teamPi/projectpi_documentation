@@ -78,11 +78,11 @@ priority job.
 
 There are two fixes to this problem.
 
-1) The job priorities can be re-evaluated based on how long they have been waiting. This
+1. The job priorities can be re-evaluated based on how long they have been waiting. This
 would prevent low priority jobs from never running. After they reach a pre-defined wait
 threshold the job will be re-evalutated to a higher priority.
 
-2) One or two of the compute cluster's nodes could be reserved for low priority jobs. These
+2. One or two of the compute cluster's nodes could be reserved for low priority jobs. These
 nodes would work their way through the low priority queue. Once the queue is empty, the 
 reserved nodes can be opened up to service the other queues. After completing jobs from the 
 higher priority queues, a check will be performed to determine if there are jobs waiting in 
@@ -91,4 +91,24 @@ low priority queue.
 
 Round-Robin
 -----------
-The **Round-Robin (RR)** scheduling algorithm
+As a part of the **Round-Robin (RR)** scheduling algorithm a time *quantum* is defined, in 
+milliseconds. The job queue is a *First in First Out* queue, with new jobs added to the end 
+of the queue. Each job in the queue is picked one at a time and given running time. After a
+time interval of 1 quantum, *q*, the job is paused and the next in the queue is started. Once the
+end of the queue has been reached, the scheduler returns to the start of the queue, in 
+Round-Robin fashion.
+
+.. image:: images/RoundRobin.jpg
+    :scale: 70%
+    :align: center
+    :alt: RR
+
+As each job only gets small intervals of running time, the average waiting time for jobs can
+be longer. The job queue holds *n* jobs. Jobs with short walltimes can finish in a reasonable 
+time. However, longer running jobs are continuously starting and stopping. These long running
+jobs must wait a maxiumum of *(n-1)/q* time units before each time it runs.
+
+If the time quantum is large enough, the RR algorithm can turn into FCFS. If the quantum is 
+extremely small, the RR algorithm can create the apperance of each job having its processor.
+However, the size of the quantum must make up for the overhead of stopping one job to start/
+re-start another.
