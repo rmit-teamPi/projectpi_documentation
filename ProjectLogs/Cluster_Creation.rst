@@ -27,11 +27,11 @@ Cluster Configuration
    
    - **slavepiX ONLY:**
      
-     - Follow the steps below for each of the slavepiX nodes.
+     *Follow the steps below for each of the slavepiX nodes.*
    
      1) Generate an SSH Key Pair
    
-        - Login as 'rpicluster'
+        > Login as 'rpicluster'
       
         ::
 
@@ -48,7 +48,7 @@ Cluster Configuration
 
    - **masterpi ONLY:**
    
-     - Follow the steps below on the masterpi node.
+    *Follow the steps below on the masterpi node.*
      
     ::
 
@@ -66,31 +66,31 @@ Cluster Configuration
 
      ``# sudo mkdir /cluster_shared``
    
-     - Add the "cluster_shared" directory to NFS.
+     > Add the "cluster_shared" directory to NFS.
         
        ``# sudo vim /etc/exports``
 
-         - Add the following line to the end of the file:
+         > Add the following line to the end of the file:
             
          ``\/cluster_shared     *(rw,sync)``
    
      ``# sudo chown -R nobody.nobody /cluster_shared``
    
-     - Edit the "nfs-common.conf" file.
+     > Edit the "nfs-common.conf" file.
         
        ``# sudo vim /etc/conf.d/nfs-common.conf``
 
-         - Find "STATD_OPTS=". Change it to:
+         > Find "STATD_OPTS=". Change it to:
             
          ``STATD_OPTS="-no-notify"``
 
    - **Client Configuration [slavepiX]**
    
-     - Add the "cluster_shared" NFS share to the client.
+     > Add the "cluster_shared" NFS share to the client.
      
        ``# sudo vim /etc/fstab``
        
-         - Add the following line to the end of the file:
+         > Add the following line to the end of the file:
        
          ``172.20.32.82:/cluster_shared /cluster_shared nfs defaults 0 0``
        
