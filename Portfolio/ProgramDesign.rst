@@ -173,4 +173,4 @@ Two of the possible ways to fix this problem are:
 
 Round-Robin
 -----------
-The **Round-Robin (RR)** scheduling algorithm utilises a 
+The **Round-Robin (RR)** scheduling algorithm utilises a FCFS queue.

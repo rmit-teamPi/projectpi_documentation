@@ -66,6 +66,6 @@ system. However, the central device failing would be catastrophic, bringing the 
 system down.
 
 .. image:: images/topology.jpg
-    :scale: 70%
+    :scale: 80%
     :align: center
     :alt: Topology diagram.
