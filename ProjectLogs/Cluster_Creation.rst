@@ -77,6 +77,28 @@ Cluster Configuration
      |          | | gateway=172.20.32.1                 |
      +----------+---------------------------------------+
 
+**Note:** Run the following on all nodes.
+
+     ``# sudo vim /etc/systemd/system/network.service``
+     
+     | [Unit]
+     | Description=Network Connectivity
+     | Wants=network.target
+     | Before=network.target
+     |
+     | [Service]
+     | Type=oneshot
+     | RemainAfterExit=yes
+     | EnvironmentFile=/etc/conf.d/network
+     | ExecStart=/sbin/ip link set dev ${interface} up
+     | ExecStart=/sbin/ip addr add ${address}/${netmask} broadcast ${broadcast} dev ${interface}
+     | ExecStart=/sbin/ip route add default via ${gateway}
+     | ExecStop=/sbin/ip addr flush dev ${interface}
+     | ExecStop=/sbin/ip link set dev ${interface} down
+     |
+     | [Install]
+     | WantedBy=multi-user.target
+
 - SSH Configuration:
 
    OpenSSH setup is a core requirement for OpenMPI functionality.
