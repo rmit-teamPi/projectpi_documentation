@@ -55,8 +55,10 @@ network.
 Flexibility
 -----------
 By utilising a central device for communications, a star network can easily be
-expanded to support additional nodes without affecting the entire network.
-Furthermore nodes can be removed at any time, if servicing is required.
+expanded to support additional nodes without affecting the entire network. The cluster
+can be expanded to accommodate as many nodes as required. However, in order to reduce
+the master pi's overhead, it is recommended that there be a 1:20 ratio between the master
+and slaves. Furthermore nodes can be removed at any time, if servicing is required.
 
 Redundancy
 ----------
@@ -66,6 +68,6 @@ system. However, the central device failing would be catastrophic, bringing the 
 system down.
 
 .. image:: images/topology.jpg
-    :scale: 80%
+    :scale: 90%
     :align: center
     :alt: Topology diagram.
