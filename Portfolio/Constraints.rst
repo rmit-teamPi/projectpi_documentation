@@ -59,8 +59,10 @@ When selecting a programming language for the development of the Berry Batch sch
 key concerns were:
 
 - Efficiency 
-    - As mentioned in the previous section, performance is a key issue when 
-    construcing a compute cluster.
+
+    - As mentioned in the previous section, performance is a key issue when construcing a 
+      compute cluster.
+
 - The existence of a Message Passing Interface (MPI) library.
 - Ease of use.
 

@@ -43,6 +43,28 @@ fashion. They will:
     :align: center
     :alt: Slave states
 
+Job Execution
+-------------
+
+Once a job has been submitted, it moves through the following states:
+
+    1. Queued
+    #. Running
+    #. Exiting
+    #. Complete
+    #. Cancelled
+
+.. image:: images/JobStates.jpg
+    :scale: 60%
+    :align: center
+    :alt: Job state diagram.
+
+When a job has completed, a Berry Batch job summary file is written. This summary contains
+the details of the job's execution, such as the resources and walltime that were requested 
+as well as what was actually used. Any standard output generated during execution is also 
+included in the summary file. The file is saved to a directory within the owner's home 
+directory.
+
 ---------------------
 Scheduling Algorithms
 ---------------------

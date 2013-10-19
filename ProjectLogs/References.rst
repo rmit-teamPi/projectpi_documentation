@@ -34,6 +34,7 @@ https://computing.llnl.gov/linux/slurm/overview.html
 http://qcd.phys.cmu.edu/QCDcluster/pbs/run_serial.html
 
 Bell, J. *Operating Systems: CPU Scheduling*. Retrieved from 
+
 http://www.cs.uic.edu/~jbell/CourseNotes/OperatingSystems/5_CPU_Scheduling.html
 
 Apparatus, D. (2012, April 18). *HPC High Performance Compute Cluster with MPI and Arch*.
@@ -91,4 +92,5 @@ OpenMPI
 Retrieved from http://www.open-mpi.org/faq/?category=running
 
 *Wikipedia.org - Message Passing Interface*.
+
 Retrieved from http://en.wikipedia.org/wiki/Message_Passing_Interface#Example_program
