@@ -41,6 +41,11 @@ These include, but are not limited to, the following:
 | application with 2 nodes overclocked  | priority processing nodes are available|
 | to 900MHz.                            | if required.                           |
 +---------------------------------------+----------------------------------------+
+| View the worker nodes state table.    | Details the instantaneous system       | 
+|                                       | resources of the worker nodes          |
+|                                       | including processor and memory         |
+|                                       | utilization for each.                  |
++---------------------------------------+----------------------------------------+
 | Submit a collection of short jobs     | After running the test 10 times, some  | 
 | using the "Round Robin" algorithm.    | of the job assignments to each of the  |
 | (Repeat: 10 times)                    | nodes should be the same in each test. |
