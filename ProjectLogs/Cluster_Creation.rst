@@ -21,6 +21,62 @@ Cluster Configuration
      | slavepi4 | ``# echo "slavepi4" > /etc/hostname`` |
      +----------+---------------------------------------+
 
+- Set a Static IP Address:
+
+   **Note:** Enter the appropriate IP address for the device being setup
+   
+     +----------+---------------------------------------+
+     | Device   | Command                               |
+     +==========+=======================================+
+     | masterpi | ``# sudo vim /etc/conf.d/network``    |
+     |          |                                       |
+     |          | | interface=eth0                      |
+     |          | | address=172.20.32.82                |
+     |          | | netmask=255.255.255.0               |
+     |          | | broadcast=172.20.32.255             |
+     |          | | gateway=172.20.32.1                 |
+     +----------+---------------------------------------+
+     | slavepi0 | ``# sudo vim /etc/conf.d/network``    |
+     |          |                                       |
+     |          | | interface=eth0                      |
+     |          | | address=172.20.32.83                |
+     |          | | netmask=255.255.255.0               |
+     |          | | broadcast=172.20.32.255             |
+     |          | | gateway=172.20.32.1                 |
+     +----------+---------------------------------------+
+     | slavepi1 | ``# sudo vim /etc/conf.d/network``    |
+     |          |                                       |
+     |          | | interface=eth0                      |
+     |          | | address=172.20.32.84                |
+     |          | | netmask=255.255.255.0               |
+     |          | | broadcast=172.20.32.255             |
+     |          | | gateway=172.20.32.1                 |
+     +----------+---------------------------------------+
+     | slavepi2 | ``# sudo vim /etc/conf.d/network``    |
+     |          |                                       |
+     |          | | interface=eth0                      |
+     |          | | address=172.20.32.85                |
+     |          | | netmask=255.255.255.0               |
+     |          | | broadcast=172.20.32.255             |
+     |          | | gateway=172.20.32.1                 |
+     +----------+---------------------------------------+
+     | slavepi3 | ``# sudo vim /etc/conf.d/network``    |
+     |          |                                       |
+     |          | | interface=eth0                      |
+     |          | | address=172.20.32.86                |
+     |          | | netmask=255.255.255.0               |
+     |          | | broadcast=172.20.32.255             |
+     |          | | gateway=172.20.32.1                 |
+     +----------+---------------------------------------+
+     | slavepi4 | ``# sudo vim /etc/conf.d/network``    |
+     |          |                                       |
+     |          | | interface=eth0                      |
+     |          | | address=172.20.32.87                |
+     |          | | netmask=255.255.255.0               |
+     |          | | broadcast=172.20.32.255             |
+     |          | | gateway=172.20.32.1                 |
+     +----------+---------------------------------------+
+
 - SSH Configuration:
 
    OpenSSH setup is a core requirement for OpenMPI functionality.
