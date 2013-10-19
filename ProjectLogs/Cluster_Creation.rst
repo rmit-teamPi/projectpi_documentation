@@ -24,57 +24,28 @@ Cluster Configuration
 - Set a Static IP Address:
 
    **Note:** Enter the appropriate IP address for the device being setup
+
+    ``# sudo vim /etc/conf.d/network`` 
+   
+     | interface=eth0                      
+     | netmask=255.255.255.0
+     | broadcast=172.20.32.255
+     | gateway=172.20.32.1
    
      +----------+---------------------------------------+
      | Device   | Command                               |
      +==========+=======================================+
-     | masterpi | ``# sudo vim /etc/conf.d/network``    |
-     |          |                                       |
-     |          | | interface=eth0                      |
-     |          | | address=172.20.32.82                |
-     |          | | netmask=255.255.255.0               |
-     |          | | broadcast=172.20.32.255             |
-     |          | | gateway=172.20.32.1                 |
+     | masterpi | | address=172.20.32.82                |
      +----------+---------------------------------------+
-     | slavepi0 | ``# sudo vim /etc/conf.d/network``    |
-     |          |                                       |
-     |          | | interface=eth0                      |
-     |          | | address=172.20.32.83                |
-     |          | | netmask=255.255.255.0               |
-     |          | | broadcast=172.20.32.255             |
-     |          | | gateway=172.20.32.1                 |
+     | slavepi0 | | address=172.20.32.83                |
      +----------+---------------------------------------+
-     | slavepi1 | ``# sudo vim /etc/conf.d/network``    |
-     |          |                                       |
-     |          | | interface=eth0                      |
-     |          | | address=172.20.32.84                |
-     |          | | netmask=255.255.255.0               |
-     |          | | broadcast=172.20.32.255             |
-     |          | | gateway=172.20.32.1                 |
+     | slavepi1 | | address=172.20.32.84                |
      +----------+---------------------------------------+
-     | slavepi2 | ``# sudo vim /etc/conf.d/network``    |
-     |          |                                       |
-     |          | | interface=eth0                      |
-     |          | | address=172.20.32.85                |
-     |          | | netmask=255.255.255.0               |
-     |          | | broadcast=172.20.32.255             |
-     |          | | gateway=172.20.32.1                 |
+     | slavepi2 | | address=172.20.32.85                |
      +----------+---------------------------------------+
-     | slavepi3 | ``# sudo vim /etc/conf.d/network``    |
-     |          |                                       |
-     |          | | interface=eth0                      |
-     |          | | address=172.20.32.86                |
-     |          | | netmask=255.255.255.0               |
-     |          | | broadcast=172.20.32.255             |
-     |          | | gateway=172.20.32.1                 |
+     | slavepi3 | | address=172.20.32.86                |
      +----------+---------------------------------------+
-     | slavepi4 | ``# sudo vim /etc/conf.d/network``    |
-     |          |                                       |
-     |          | | interface=eth0                      |
-     |          | | address=172.20.32.87                |
-     |          | | netmask=255.255.255.0               |
-     |          | | broadcast=172.20.32.255             |
-     |          | | gateway=172.20.32.1                 |
+     | slavepi4 | | address=172.20.32.87                |
      +----------+---------------------------------------+
 
    **Note:** Run the following on all nodes.
