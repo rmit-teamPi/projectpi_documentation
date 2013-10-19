@@ -40,11 +40,6 @@ quickly each individual node can process its allocated tasks, if the communicati
 between the system's master and each of the slave nodes becomes a bottleneck, then the
 entire system will suffer in performance.
 
-.. image:: images/topology.jpg
-    :scale: 70%
-    :align: center
-    :alt: Topology diagram.
-
 In order to produce an efficient, flexible and reliable system, the selection of a 
 networking topology which can fulfil those three specific characteristics is crucial. By 
 selecting the star network topology as the basis for the Punnet of Berries super computer, 
@@ -69,3 +64,8 @@ The likelihood of total system failure is greatly reduced by using a central dev
 communication. The failure of an individual node wouldn't have any effect on the overall
 system. However, the central device failing would be catastrophic, bringing the entire 
 system down.
+
+.. image:: images/topology.jpg
+    :scale: 70%
+    :align: center
+    :alt: Topology diagram.

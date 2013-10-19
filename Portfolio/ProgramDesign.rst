@@ -15,7 +15,7 @@ most appropriate slave to carry out the job. This is done by monitoring the syst
 resources and the jobs running or waiting.
 
 .. image:: images/JobDelegation.jpg
-    :scale: 60%
+    :scale: 80%
     :align: center
     :alt: Job delegation.
 
