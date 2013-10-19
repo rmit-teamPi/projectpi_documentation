@@ -30,6 +30,16 @@ A user is able to:
     - View the status of a particular job.
     - Cancel their own jobs.
 
+For example, to view the status of the jobs currently in the system::
+
+    # berrybatch status
+    ID      | Owner     | Name      | Walltime   | Status
+    -----------------------------------------------------    
+    123     | user1     | MPI_Test  |            | Q
+    129     | user1     | MPI_Test2 | 00:10:32   | C
+    139     | user3     | Test      | 00:00:32   | R
+
+
 The workers exist to execute the jobs submitted to the system. They operate in a polling 
 fashion. They will:
 
@@ -48,11 +58,11 @@ Job Execution
 
 Once a job has been submitted, it moves through the following states:
 
-    1. Queued
-    #. Running
-    #. Exiting
-    #. Complete
-    #. Cancelled
+    - Queued
+    - Running
+    - Exiting
+    - Complete
+    - Cancelled
 
 .. image:: images/JobStates.jpg
     :scale: 60%
