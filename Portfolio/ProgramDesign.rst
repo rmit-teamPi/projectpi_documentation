@@ -35,8 +35,8 @@ For example, to view the status of the jobs currently in the system::
     # berrybatch status
     ID      | Owner     | Name      | Walltime   | Status
     -----------------------------------------------------    
-    123     | user1     | MPI_Test  |            | Q
-    129     | user1     | MPI_Test2 | 00:10:32   | C
+    123     | user2     | MPI_Test  |            | Q
+    129     | user1     | job129    | 00:10:32   | C
     139     | user3     | Test      | 00:00:32   | R
 
 
@@ -53,9 +53,9 @@ fashion. They will:
     :align: center
     :alt: Slave states
 
+-------------
 Job Execution
 -------------
-
 Once a job has been submitted, it moves through the following states:
 
     - Queued
@@ -112,13 +112,13 @@ resources requested. The priority queues are defined as:
 | Priority  | Max Walltime  | Resources   |
 |           | (minutes)     | (no. nodes) |
 +===========+===============+=============+
-| Low       |  15 mins      |     1 - 2   | 
+| Low       |  20 mins      |     1 - 2   | 
 +-----------+---------------+-------------+
-| Medium    |  30 mins      |     1 - 3   |
+| Medium    |  40 mins      |     1 - 3   |
 +-----------+---------------+-------------+
-| High      |  45 mins      |     2 - 4   |
+| High      |  > 60 mins    |     1 - 4   |
 +-----------+---------------+-------------+
-| Special   |  > 60 mins    |     1 - 5   |
+| Special   |  > 60 mins    |     5       |
 +-----------+---------------+-------------+
 
 .. note::
@@ -155,25 +155,4 @@ Two of the possible ways to fix this problem are:
 
 Round-Robin
 -----------
-As a part of the **Round-Robin (RR)** scheduling algorithm a time *quantum* is defined, in 
-milliseconds. The job queue is a *First in First Out* queue, with new jobs added to the end 
-of the queue. Each job in the queue is picked one at a time and given running time. After a
-time interval of 1 quantum, *q*, the job is paused and the next in the queue is started. Once the
-end of the queue has been reached, the scheduler returns to the start of the queue, in 
-Round-Robin fashion.
-
-.. image:: images/RoundRobin.jpg
-    :scale: 70%
-    :align: center
-    :alt: RR
-
-As each job only gets small intervals of running time, the average waiting time for jobs can
-be longer. The job queue holds *n* jobs. Jobs with short walltimes can finish in a reasonable 
-time. However, longer running jobs are continuously starting and stopping. These long running
-jobs must wait a maxiumum of *(n-1)/q* time units before each time it runs.
-
-If the time quantum is large enough, the RR algorithm can turn into FCFS. If the quantum is 
-extremely small, the RR algorithm can create the apperance of each job having its processor.
-However, the size of the quantum must make up for the overhead of stopping one job to start/
-re-start another.
-
+The **Round-Robin (RR)** scheduling algorithm utilises a 

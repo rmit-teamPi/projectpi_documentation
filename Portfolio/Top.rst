@@ -8,6 +8,7 @@ Project Pi - A Punnet of Berries
     Constraints
     Architecture
     OperatingSystem
+    ProjectLogs/Cluster_Creation
     ProgramDesign
     SourceCode
     Testing
