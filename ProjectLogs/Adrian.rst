@@ -2,11 +2,11 @@ Adrian Zielonka's Log
 =====================
 
 Week 01
-------
+-------
 1. Brainstormed and researched viable project ideas.
 
 Week 02
-------
+-------
 1. Brainstormed and researched viable project ideas.
 
 Week 03
@@ -16,7 +16,7 @@ Week 04
 -------
 
 Week 05
-------
+-------
 1. Worked on Design Specification.
 
 Week 06
