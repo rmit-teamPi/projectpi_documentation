@@ -77,7 +77,7 @@ Cluster Configuration
      |          | | gateway=172.20.32.1                 |
      +----------+---------------------------------------+
 
-**Note:** Run the following on all nodes.
+   **Note:** Run the following on all nodes.
 
      ``# sudo vim /etc/systemd/system/network.service``
      
@@ -98,6 +98,11 @@ Cluster Configuration
      |
      | [Install]
      | WantedBy=multi-user.target
+     
+     ``# sudo systemctl disable dhcpcd@eth0.service``
+     
+     ``# sudo systemctl enable network.service``
+     
 
 - SSH Configuration:
 
