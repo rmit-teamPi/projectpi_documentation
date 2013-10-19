@@ -28,13 +28,45 @@ These include, but are not limited to, the following:
 +---------------------------------------+----------------------------------------+
 | Test Cases                            | Expected Result                        |
 +=======================================+========================================+
-| Submit 1 short job.                   | Confirmation. Job put in short queue.  |
+| Initialize the 'Punnet Scheduler'     | A total of 5 worker nodes should       |
+| application with a total of 6 nodes   | report for duty.                       |
+| in the cluster.                       |                                        |
 +---------------------------------------+----------------------------------------+
-| Submit 1 medium job.                  | Confirmation. Job put in medium queue. |
+| Submit a collection of short jobs     | After running the test 10 times, some  | 
+| using the "Round Robin" algorithm.    | of the job assignments to each of the  |
+| (Repeat: 10 times)                    | nodes should be the same in each test. |
 +---------------------------------------+----------------------------------------+
-| Submit 1 long job.                    | Confirmation. Job put in long queue.   |
+| Submit collection of assorted jobs    | After running the test 10 times, some  |
+| using "Round Robin" algorithm.        | the job assignments to each of the     |
+| (Repeat: 10 times)                    | nodes should be different in each test.|
 +---------------------------------------+----------------------------------------+
-| Submit 1 special job.                 | Job set to wait for permission.        |
+
++---------------------------------------+----------------------------------------+
+| Overclock one node to 900MHz. Submit  | The node overclocked running at 900MHz |
+| a collection of jobs, including one   | should be assigned the high priority   |
+| high priority job using "Priority     | job in every test which is run.        |
+| Scheduling" algorithm.                |                                        |
+| (Repeat: 10 times)                    |                                        |
++---------------------------------------+----------------------------------------+
+| Assign one node as a priority         | The node assigned as a priority        |
+| processor. Submit a collection of     | processor should be assigned the high  |
+| jobs including one high priority job  | priority job in every test which is    |
+| using "Priority Scheduling" algorithm.| run.                                   |
+| (Repeart: 10 times)                   |                                        |
++---------------------------------------+----------------------------------------+
+
+
+
+
+
+
+
+
+
+
+
+
+
 +---------------------------------------+----------------------------------------+
 | One user submits a short job          | First job put in short queue.          |
 | followed by one medium job.           | Second job put in medium queue.        |
