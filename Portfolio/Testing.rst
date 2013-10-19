@@ -28,38 +28,58 @@ These include, but are not limited to, the following:
 +---------------------------------------+----------------------------------------+
 | Test Cases                            | Expected Result                        |
 +=======================================+========================================+
-| Submit 1 short job.                   | Confirmation. Job put in short queue.  |
+| Initialize the 'Punnet Scheduler'     | A total of 5 worker nodes should       |
+| application with a total of 6 nodes   | report for duty.                       |
+| in the cluster.                       |                                        |
 +---------------------------------------+----------------------------------------+
-| Submit 1 medium job.                  | Confirmation. Job put in medium queue. |
+| Initialize the 'Punnet Scheduler'     | An alert should appear advising that   |
+| application with a total of 6 nodes   | two nodes have gone offline. The       |
+| in the cluster. Proceed to disconnect | cluster should proceed to function     |
+| two nodes.                            | as per normal.                         |
 +---------------------------------------+----------------------------------------+
-| Submit 1 long job.                    | Confirmation. Job put in long queue.   |
+| Initialize the 'Punnet Scheduler'     | The application should report that 2   |
+| application with 2 nodes overclocked  | priority processing nodes are available|
+| to 900MHz.                            | if required.                           |
 +---------------------------------------+----------------------------------------+
-| Submit 1 special job.                 | Job set to wait for permission.        |
+| View the worker nodes state table.    | Details the instantaneous system       | 
+|                                       | resources of the worker nodes          |
+|                                       | including processor and memory         |
+|                                       | utilization for each.                  |
 +---------------------------------------+----------------------------------------+
-| One user submits a short job          | First job put in short queue.          |
-| followed by one medium job.           | Second job put in medium queue.        |
+| Submit a collection of short jobs     | After running the test 10 times, some  | 
+| using the "Round Robin" algorithm.    | of the job assignments to each of the  |
+| (Repeat: 10 times)                    | nodes should be the same in each test. |
 +---------------------------------------+----------------------------------------+
-| One user submit a short job.          | First user's job put in short queue.   |
-| Second user submits a short job.      | Second user's job put in short queue   |
-|                                       | after the first.                       |
+| Submit a collection of assorted jobs  | After running the test 10 times, some  |
+| using the "Round Robin" algorithm.    | of the job assignments to each of the  |
+| (Repeat: 10 times)                    | nodes should be different in each test.|
 +---------------------------------------+----------------------------------------+
-| One user submit a short job.          | First user's job put in short queue.   |
-| Second user submits a medium job.     | Second user's job put in medium queue. |
+| Submit a collection of short jobs     | After running the test 10 times, the   |
+| using the "First Come First Serve"    | jobs should be processed in the order  |
+| algorithm.                            | the appear in the queue. This should be|
+| (Repeat: 10 times)                    | consistent for each test.              |
 +---------------------------------------+----------------------------------------+
-| One user submit a short job.          | First user's job put in short queue.   |
-| Second user submits a medium job.     | Second user's job put in medium queue. |
-| Third user submits a medium job.      | Third user's job put in long queue.    |
+| Submit a collection of assorted jobs  | After running the test 10 times, the   |
+| using the "First Come First Serve"    | jobs should be processed in the order  |
+| algorithm.                            | the appear in the queue. This should be|
+| (Repeat: 10 times)                    | consistent for each test.              |
++---------------------------------------+----------------------------------------+
+| Overclock one node to 900MHz. Submit  | The node overclocked running at 900MHz |
+| a collection of jobs, including one   | should be assigned the high priority   |
+| high priority job using the "Priority | job in every test which is run.        |
+| Scheduling" algorithm.                |                                        |
+| (Repeat: 10 times)                    |                                        |
++---------------------------------------+----------------------------------------+
+| Assign one node as a priority         | The node assigned as a priority        |
+| processor. Submit a collection of     | processor should be assigned the high  |
+| jobs including one high priority job  | priority job in every test which is    |
+| using the "Priority Scheduling"       | run.                                   |
+| algorithm.                            |                                        |
+| (Repeart: 10 times)                   |                                        |
 +---------------------------------------+----------------------------------------+
 | User views all current jobs.          | List of jobs currently in the system.  |
 +---------------------------------------+----------------------------------------+
-| User views a particular user's jobs.  | List of user's jobs currently in the   |
-|                                       | system.                                |
-+---------------------------------------+----------------------------------------+
 | User views a specific job.            | Details of the given job.              |
-+---------------------------------------+----------------------------------------+
-| First user views all current jobs.    | First user sees list of jobs currently |
-| Second user views a specific jobs.    | in the system. Second user sees the    |
-|                                       | details of the given job.              |
 +---------------------------------------+----------------------------------------+
 | User cancels a queued job.            | Confirmation of job cancellation.      |
 +---------------------------------------+----------------------------------------+
@@ -68,6 +88,4 @@ These include, but are not limited to, the following:
 | User cancels a completed job.         | Warning of invalid state.              |
 +---------------------------------------+----------------------------------------+
 | User cancels an already cancelled job.| Warning of invalid state.              |
-+---------------------------------------+----------------------------------------+
-| One user cancels another user's job.  | Permission denied.                     |
 +---------------------------------------+----------------------------------------+

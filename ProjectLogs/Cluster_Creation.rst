@@ -77,7 +77,7 @@ Cluster Configuration
      |          | | gateway=172.20.32.1                 |
      +----------+---------------------------------------+
 
-**Note:** Run the following on all nodes.
+   **Note:** Run the following on all nodes.
 
      ``# sudo vim /etc/systemd/system/network.service``
      
@@ -98,6 +98,11 @@ Cluster Configuration
      |
      | [Install]
      | WantedBy=multi-user.target
+     
+     ``# sudo systemctl disable dhcpcd@eth0.service``
+     
+     ``# sudo systemctl enable network.service``
+     
 
 - SSH Configuration:
 
@@ -122,21 +127,7 @@ Cluster Configuration
    
      2) Copy SSH Keys from Slave Nodes
       
-        ``# scp ~/.ssh/id_rsa.pub rpicluster@<hostname/ip address of masterpi>:``
-
-   - **masterpi ONLY:**
-   
-    *Follow the steps below on the masterpi node.*
-     
-    ::
-
-         # mkdir ~/.ssh
-         
-         # cat ~/id_ecdsa.pub >> ~/.ssh/authorized_keys
-
-         # rm ~/id_ecdsa.pub
-
-         # chmod 600 ~/.ssh/authorized_keys
+        ``# ssh-copy-id -i ~/.ssh/id_rsa.pub rpicluster@172.20.32.82``
 
 - NFS Configuration:
 
