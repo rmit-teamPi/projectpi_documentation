@@ -2,7 +2,7 @@ Self Assessment
 ===============
 
 .. image:: ProjectLogs/SelfAssessment1.jpg
-    :scale: 95%
+    :scale: 90%
     :align: center
     :alt: assessment 1
 
