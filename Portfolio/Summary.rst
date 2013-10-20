@@ -1,8 +1,9 @@
 Summary
 =======
-When setting out to build a Raspberry Pi computer cluster, one should never aim
-to create a system capable of making the list of the Top 500 supercomputers in
-the world. After all, such a cluster is no substitute for a true supercomputer.
+When setting out to build a Raspberry Pi computing cluster, one should never 
+aim to create a system capable of making the list of the Top 500 supercomputers 
+in the world. After all, such a cluster is no substitute for a true
+supercomputer.
 
 So what's the point you ask?
 
@@ -23,5 +24,10 @@ distributed computing cluster on a budget was made a reality. With only a couple
 hundred dollars spent, individuals can now have access to a mini-supercomputer
 in their own home.
 
+'A Punnet of Berries' is a project created by 'Team Pi' which employs the use of
+a Raspberry Pi computing cluster to perform batch scheduling and processing of
+jobs submitted to the 'Berry Batch' application software. This custom written
+piece of software utilises a number of technologies to assign and distribute 
+jobs based on predefined user selectable algorithms.
 
 --------------------------------------------------------------------------------
