@@ -1,5 +1,23 @@
 Summary
 =======
+**A Punnet of Berries** is a project created by **Team Pi** which employs the use 
+of a Raspberry Pi computing cluster to perform batch scheduling and processing of
+jobs submitted to the 'Berry Batch' application software. This custom written
+piece of software utilises a number of technologies to assign and distribute 
+jobs based on predefined user selectable algorithms. These scheduling algorithms
+include the *Round Robin*, *First Come First Serve* and *Priority Scheduling*
+algorithms, with the software being easily expandable to incorporate a variety
+of other scheduling algorithms. Using a master and slave model of communication, 
+the cluster utilises the CPU processing power of each the slaves nodes to 
+execute jobs and report back their results to the master node.
+
+With the Raspberry Pi CPU clock speed coming in at a decent, but conservative,
+700MHz, future implementations of the **Berry Batch** software could incorporate 
+the use of the Raspberry Pi's onboard GPU to boost the raw processing power each
+node and as a result the raw processing power of the entire cluster.
+
+--------------------------------------------------------------------------------
+
 When setting out to build a Raspberry Pi computing cluster, one should never 
 aim to create a system capable of making the list of the Top 500 supercomputers 
 in the world. After all, such a cluster is no substitute for a true
@@ -23,21 +41,3 @@ in at approximately $35 (depending on country), the idea of a building a
 distributed computing cluster on a budget was made a reality. With only a couple
 hundred dollars spent, individuals can now have access to a mini-supercomputer
 in their own home.
-
-'A Punnet of Berries' is a project created by 'Team Pi' which employs the use of
-a Raspberry Pi computing cluster to perform batch scheduling and processing of
-jobs submitted to the 'Berry Batch' application software. This custom written
-piece of software utilises a number of technologies to assign and distribute 
-jobs based on predefined user selectable algorithms. These scheduling algorithms
-include the "Round Robin", "First Come First Serve" and "Priority Scheduling"
-algorithms, with the software being easily expandable to incorporate a variety
-of other scheduling algorithms. Using a master and slave model of communication, 
-the cluster utilises the CPU processing power of each the slaves nodes to 
-execute jobs and report back their results to the master node.
-
-With the Raspberry Pi CPU clock speed coming in at a decent but conservative
-700MHz, future implementations of the 'Berry Batch' software could incorporate 
-the use of the Raspberry Pi's onboard GPU to boost the raw processing power each
-node and as a result the raw processing power of the entire cluster.
-
---------------------------------------------------------------------------------

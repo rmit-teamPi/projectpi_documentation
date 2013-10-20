@@ -7,21 +7,17 @@ Tests Done
 
 Cluster Performance Tests
 -------------------------
-In order to test the performance and functionality of the 'Punnet of Berries' 
-cluster, the system will be tested using a 'HPL (High-Performance Linpack 
-Benchmark)'. This benchmark provides guesstimates of how many GFLOPS (**G** iga 
-**FL** oating-point **O** perations **P** er **S** econd) of processing 
-performance the Punnet of Berries cluster is able to achieve.
+In order to test the performance and functionality of the Punnet of Berries cluster,
+it was planned to test the system using a **High-Performance Linpack (HPL) Benchmark**.
+This benchmark provides informationon the processing performance of systems using 
+estimates of how many GFLOPS (**G** iga **FL** oating-point **O** perations **P** er 
+**S** econd).
 
-Once the cluster itself has been benchmarked, the 'HPL' will then be run
-on a single Raspberry Pi as well as seperate system containing a modern x86/x64
-based processor. This will provide a meaningful comparison with regards
-to the performance gain a cluster of six Raspberry Pi's has over various other
-systems.
+Unfortunately, it proved to be extremely difficult to location a version of HPL that is 
+compatible with Arch Linux ARM.
 
 Batch System Tests
 ------------------
-
 To prove that the Berry Batch is functioning correctly, it will undergo a range of tests. 
 These include, but are not limited to, the following:
 
