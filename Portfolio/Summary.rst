@@ -28,6 +28,9 @@ in their own home.
 a Raspberry Pi computing cluster to perform batch scheduling and processing of
 jobs submitted to the 'Berry Batch' application software. This custom written
 piece of software utilises a number of technologies to assign and distribute 
-jobs based on predefined user selectable algorithms.
+jobs based on predefined user selectable algorithms. These scheduling algorithms
+include the "Round Robin", "First Come First Serve" and "Priority Scheduling"
+algorithms, with the software being easily expandable to incorporate other
+scheduling algorithms.
 
 --------------------------------------------------------------------------------
