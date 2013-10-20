@@ -30,7 +30,14 @@ jobs submitted to the 'Berry Batch' application software. This custom written
 piece of software utilises a number of technologies to assign and distribute 
 jobs based on predefined user selectable algorithms. These scheduling algorithms
 include the "Round Robin", "First Come First Serve" and "Priority Scheduling"
-algorithms, with the software being easily expandable to incorporate other
-scheduling algorithms.
+algorithms, with the software being easily expandable to incorporate a variety
+of other scheduling algorithms. Using a master and slave model of communication, 
+the cluster utilises the CPU processing power of each the slaves nodes to 
+execute jobs and report back their results to the master node.
+
+With the Raspberry Pi CPU clock speed coming in at a decent but conservative
+700MHz, future implementations of the 'Berry Batch' software could incorporate 
+the use of the Raspberry Pi's onboard GPU to boost the raw processing power each
+node and as a result processing power of the entire cluster.
 
 --------------------------------------------------------------------------------
