@@ -1,5 +1,21 @@
 Self Assessment
 ===============
+
+.. image:: ProjectLogs/SelfAssessment1.jpg
+    :scale: 95%
+    :align: center
+    :alt: assessment 1
+
+.. image:: ProjectLogs/SelfAssessment2.jpg
+    :scale: 95%
+    :align: center
+    :alt: assessment 2
+
+.. image:: ProjectLogs/SelfAssessment3.jpg
+    :scale: 95%
+    :align: center
+    :alt: assessment 3
+
 .. toctree::
 
     Methodology

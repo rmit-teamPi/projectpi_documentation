@@ -25,6 +25,10 @@ Hardware
 The above table details the hardware components used to create the Punnet of Berries compute
 cluster.
 
+Once the switch has been set up and each Raspberry Pi has been connected by an ethernet
+cable, the Master Pi should be turned on first. The operating system takes approximately 10 
+seconds to initiate. When the master has turned on, the slaves can be turned on.
+
 -------------
 System Design
 -------------
