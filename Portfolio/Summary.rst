@@ -38,6 +38,6 @@ execute jobs and report back their results to the master node.
 With the Raspberry Pi CPU clock speed coming in at a decent but conservative
 700MHz, future implementations of the 'Berry Batch' software could incorporate 
 the use of the Raspberry Pi's onboard GPU to boost the raw processing power each
-node and as a result processing power of the entire cluster.
+node and as a result the raw processing power of the entire cluster.
 
 --------------------------------------------------------------------------------
