@@ -6,11 +6,13 @@ the world. After all, such a cluster is no substitute for a true supercomputer.
 
 So what's the point you ask?
 
-A Raspberry Pi computer cluster is a fantastic and accurate representation of a 
-full scale supercomputer on a budget. While the performance per dollar ratio
-will never match that of a true supercomputer, there's one major benefit to
-creating an RPi cluster. It's relatively affordable for anyone who would like to
-build one. This means that 
+While a Raspberry Pi computer cluster will never come close to a modern day 
+supercomputer, it's a fantastic and fundamental representation of a full scale 
+supercomputer on a budget. Sure the performance per dollar ratio will never 
+even come close to that of a true supercomputer, but there's one major benefit 
+to creating an RPi cluster. It's relatively affordable for anyone who would like
+to build one. Traditionally supercomputers are reserved for organisations and
+educational institutions who can afford them.
 
 
 --------------------------------------------------------------------------------
