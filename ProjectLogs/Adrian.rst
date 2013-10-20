@@ -11,9 +11,12 @@ Week 02
 
 Week 03
 -------
+1. Brainstormed and researched viable project ideas.
 
 Week 04
 -------
+1. Brainstormed and researched viable project ideas.
+2. Worked on Design Specification.
 
 Week 05
 -------
@@ -28,6 +31,8 @@ Week 06
 
 Week 07
 -------
+1. Configured "masterpi" image to reduced unneeded packages.
+2. Setup OpenMPI, OpenSSH and NFS sharing for the MASTER Raspberry Pi.
 
 Week 08
 -------
@@ -37,15 +42,20 @@ Week 08
 
 Week 09
 -------
+1. Networked all Raspberry Pi nodes together
+2. Setup OpenMPI, OpenSSH and NFS sharing for the SLAVE #0 Raspberry Pi.
 
 Week 10
 -------
+1. Portfolio
+2. Added SLAVE #1 and SLAVE #2 to the cluster.
+3. Setup OpenMPI, OpenSSH and NFS sharing for the SLAVE #1 Raspberry Pi.
+4. Setup OpenMPI, OpenSSH and NFS sharing for the SLAVE #2 Raspberry Pi.
 
 Week 11
 -------
 1. Portfolio
-2. Networked all Raspberry Pi nodes together
-3. Tested intercommunication between Raspberry Pi nodes
+2. Tested intercommunication between Raspberry Pi nodes
 
 Week 12
 -------
