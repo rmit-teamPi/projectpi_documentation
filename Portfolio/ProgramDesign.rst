@@ -176,14 +176,17 @@ Round-Robin
 As a part of the **Round-Robin (RR)** scheduling algorithm a time *quantum* is defined, in 
 milliseconds. The job queue is a *First in First Out* queue, with new jobs added to the end 
 of the queue. Each job in the queue is picked one at a time and given running time. After a
-time interval of 1 quantum, *q*, the job is paused and the next in the queue is started. Once the
-end of the queue has been reached, the scheduler returns to the start of the queue, in 
-Round-Robin fashion.
+time interval of 1 quantum, *q*, the job is paused and the next in the queue is started. 
+Once the end of the queue has been reached, the scheduler returns to the start of the queue, 
+in Round-Robin fashion.
 
 .. image:: images/RoundRobin.jpg
     :scale: 70%
     :align: center
     :alt: RR
+
+Each node is assigned a number of jobs from the FCFS queue, forming their own sub queues. 
+The nodes iterate over their subset of jobs in an RR fashion.
 
 As each job only gets small intervals of running time, the average waiting time for jobs can
 be longer. The job queue holds *n* jobs. Jobs with short walltimes can finish in a reasonable 
