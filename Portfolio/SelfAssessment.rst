@@ -4,7 +4,7 @@ Self Assessment
 .. image:: ProjectLogs/SelfAssessment1.jpg
     :align: center
     :alt: assessment 1
-    :height: 18
+    :height: 15
     :width: 20
 
 .. image:: ProjectLogs/SelfAssessment2.jpg
