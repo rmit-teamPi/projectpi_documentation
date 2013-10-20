@@ -1,6 +1,25 @@
 Self Assessment
 ===============
 
+.. image:: ProjectLogs/SelfAssessment1.jpg
+    :scale: 80%
+    :align: center
+    :alt: assessment 1
+
+.. image:: ProjectLogs/SelfAssessment2.jpg
+    :scale: 95%
+    :align: center
+    :alt: assessment 2
+
+.. image:: ProjectLogs/SelfAssessment3.jpg
+    :scale: 95%
+    :align: center
+    :alt: assessment 3
+
+.. toctree::
+
+    Methodology
+
 ------------
 Milestone 01
 ------------
@@ -29,30 +48,7 @@ Result
 ------
 
 .. image:: images/Milestone1.jpg
-    :scale: 100%
+    :scale: 70%
     :align: center
     :alt: Milestone 1 result.
 
----------------
-Self Assessment
----------------
-
-.. image:: ProjectLogs/SelfAssessment1.jpg
-    :align: center
-    :alt: assessment 1
-    :height: 15
-    :width: 20
-
-.. image:: ProjectLogs/SelfAssessment2.jpg
-    :scale: 95%
-    :align: center
-    :alt: assessment 2
-
-.. image:: ProjectLogs/SelfAssessment3.jpg
-    :scale: 95%
-    :align: center
-    :alt: assessment 3
-
-.. toctree::
-
-    Methodology
