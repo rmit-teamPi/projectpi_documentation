@@ -1,10 +1,12 @@
 Self Assessment
 ===============
+    :scale: 90%
 
 .. image:: ProjectLogs/SelfAssessment1.jpg
-    :scale: 90%
     :align: center
     :alt: assessment 1
+    :height: 18
+    :width: 20
 
 .. image:: ProjectLogs/SelfAssessment2.jpg
     :scale: 95%
